@@ -5,6 +5,7 @@ units           real
 variable        filename    string  KE_0_KEMA_0_GC_0_GCMA_1_autopsf_solvate_ionzied.data
                                                                                                                                         
 # Potential define                                                                                                                      
+newton          off                                                                                                                     
 atom_style      full                                                                                                                    
 bond_style      harmonic                                                                                                                
 angle_style     charmm                                                                                                                  
@@ -22,6 +23,8 @@ read_data       ${filename} fix cmap crossterm CMAP
 
 special_bonds   charmm                                                                                                                  
                                                                                                                                         
+velocity        all create 303.15 23112 dist gaussian 
+fix 			1 all npt temp 300.0 300.0 100.0 iso 1 1 1000.0
 # Minimized                                                                                                                             
 neigh_modify    every 1 delay 0 check yes                                                                                               
 min_style       cg                                                                                                                      
@@ -39,10 +42,9 @@ thermo_style    custom step time xlo xhi ylo yhi zlo zhi etotal pe ke ebond temp
                                                                                                                                         
 # NPT 300K                                                                                                                              
 reset_timestep  0                                                                                                                       
-fix             2 all shake 1e-6 500 0 m 1.0 a 43
-fix 			1 all npt temp 300.0 300.0 100.0 iso 1 1 1000.0                                                                           
 
-timestep        1                                                                                                                     
+timestep        0.5                                                                                                                     
 run             ${npt_step}                                                                                                             
                                                                                                                                         
 write_data      300K_equilibrium.data pair ij                                                                                                    
+write_dump      all custom 300K_equilibrium.dump id type x y z vx vy vz ix iy iz

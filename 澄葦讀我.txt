@@ -29,3 +29,5 @@ Error: Do not support KE and KEMA in same system
 1. 把charmm36移入上傳TWCC的資料夾內
 2. 如果只包含一條GC或GCMA，自動將座標旋轉並對其x,y,z軸，以得到最小的water box
 3. 增加equilibrium和production的差別，eq無pppm，pro有pppm
+4. in檔增加寫出與讀入dump的功能(必須這樣做是因為只用read restart無法把cmap的資訊讀進來，所以每次都一定要
+重讀data檔和讀入最後一刻的狀態)

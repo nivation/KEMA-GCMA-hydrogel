@@ -2,7 +2,7 @@ PSF
 
        2 !NTITLE
  REMARKS CONTROL PSF ./KE_0_KEMA_0_GC_0_GCMA_1/KE_0_KEMA_0_GC_0_GCMA_1_autopsf_solvate_ionzied_ctrl.psf
- REMARKS CREATED BY charmm2lammps v1.9.2 ON Sun Mar  6 21:13:21 CST 2022
+ REMARKS CREATED BY charmm2lammps v1.9.2 ON Sun Mar  6 22:47:04 CST 2022
 
     9110 !NATOM
        1    0 1    HSE  O1   OG31  -6.50000000e-01 15.9994           0
@@ -4200,9 +4200,9 @@ PSF
     4193  WT1 1179 TIP3 OH2  OT    -8.34000000e-01 15.9994           0
     4194  WT1 1179 TIP3 H1   HT     4.17000000e-01  1.0080           0
     4195  WT1 1179 TIP3 H2   HT     4.17000000e-01  1.0080           0
-    4196  WT2 1180 TIP3 OH2  OT    -8.34000000e-01 15.9994           0
-    4197  WT2 1180 TIP3 H1   HT     4.17000000e-01  1.0080           0
-    4198  WT2 1180 TIP3 H2   HT     4.17000000e-01  1.0080           0
+    4196  WT1 1180 TIP3 OH2  OT    -8.34000000e-01 15.9994           0
+    4197  WT1 1180 TIP3 H1   HT     4.17000000e-01  1.0080           0
+    4198  WT1 1180 TIP3 H2   HT     4.17000000e-01  1.0080           0
     4199  WT2 1181 TIP3 OH2  OT    -8.34000000e-01 15.9994           0
     4200  WT2 1181 TIP3 H1   HT     4.17000000e-01  1.0080           0
     4201  WT2 1181 TIP3 H2   HT     4.17000000e-01  1.0080           0

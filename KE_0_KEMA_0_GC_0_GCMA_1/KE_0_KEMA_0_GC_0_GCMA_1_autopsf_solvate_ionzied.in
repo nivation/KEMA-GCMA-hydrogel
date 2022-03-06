@@ -1,4 +1,4 @@
-# Created by charmm2lammps v1.9.2 on Sun Mar  6 21:13:22 CST 2022
+# Created by charmm2lammps v1.9.2 on Sun Mar  6 22:47:04 CST 2022
 # Command: charmm2lammps.pl 1_25 ./KE_0_KEMA_0_GC_0_GCMA_1/KE_0_KEMA_0_GC_0_GCMA_1_autopsf_solvate_ionzied -cmap charmm36
 
 units           real

@@ -64,6 +64,7 @@ def createTWCC(KE,KEMA,GC,GCMA,name):
         f.writelines("variable        filename    string  "+name+"_autopsf_solvate_ionzied.data\n")
         f.writelines("                                                                                                                                        \n")
         f.writelines("# Potential define                                                                                                                      \n")
+        f.writelines("newton          off                                                                                                                     \n")
         f.writelines("atom_style      full                                                                                                                    \n")
         f.writelines("bond_style      harmonic                                                                                                                \n")
         f.writelines("angle_style     charmm                                                                                                                  \n")
@@ -81,6 +82,8 @@ def createTWCC(KE,KEMA,GC,GCMA,name):
         f.writelines(pair_coeff)
         f.writelines("\nspecial_bonds   charmm                                                                                                                  \n")
         f.writelines("                                                                                                                                        \n")
+        f.writelines("velocity        all create 303.15 23112 dist gaussian \n")
+        f.writelines("fix 			1 all npt temp 300.0 300.0 100.0 iso 1 1 1000.0\n")
         f.writelines("# Minimized                                                                                                                             \n")
         f.writelines("neigh_modify    every 1 delay 0 check yes                                                                                               \n")
         f.writelines("min_style       cg                                                                                                                      \n")
@@ -98,12 +101,12 @@ def createTWCC(KE,KEMA,GC,GCMA,name):
         f.writelines("                                                                                                                                        \n")
         f.writelines("# NPT 300K                                                                                                                              \n")
         f.writelines("reset_timestep  0                                                                                                                       \n")
-        f.writelines(shake)
-        f.writelines("fix 			1 all npt temp 300.0 300.0 100.0 iso 1 1 1000.0                                                                           \n")
-        f.writelines("\ntimestep        1                                                                                                                     \n")
+        f.writelines("\ntimestep        0.5                                                                                                                     \n")
         f.writelines("run             ${npt_step}                                                                                                             \n")
         f.writelines("                                                                                                                                        \n")
         f.writelines("write_data      300K_equilibrium.data pair ij                                                                                                    \n")
+        f.writelines("write_dump      all custom 300K_equilibrium.dump id type x y z vx vy vz ix iy iz\n")
+
 
     with open(in2_file,'w') as f :
         f.writelines("# Variable                                                                                                                              \n")
@@ -126,7 +129,10 @@ def createTWCC(KE,KEMA,GC,GCMA,name):
         f.writelines("# Modify following line to point to the desired CMAP file                                                                               \n")
         f.writelines("fix             cmap all cmap charmm36.cmap                                                                          \n")
         f.writelines("fix_modify      cmap energy yes                                                                                                         \n")
-        f.writelines("read_data       ${filename} fix cmap crossterm CMAP                                                                                        \n")
+        f.writelines("read_data       ${filename} fix cmap crossterm CMAP                                                                                        \n")       
+        f.writelines("variable        laststep file 300K_equilibrium.dump \n")
+        f.writelines("next            laststep\n")
+        f.writelines("read_dump       300K_equilibrium.dump ${laststep}  x y z vx vy vz ix iy iz box yes replace yes format native\n")
         f.writelines(pair_coeff)
         f.writelines("\nspecial_bonds   charmm                                                                                                                  \n")
         f.writelines("                                                                                                                                        \n")
@@ -422,6 +428,8 @@ def autopsf(KE,KEMA,GC,GCMA,boxsize,name,delete):
         os.remove(out_solvate_pdb)
         os.remove(out_solvate_psf)
         os.remove(out_tcl)
+        if os.path.exists(align_tcl):
+            os.remove(align_tcl)
         solvate_log = './'+name+'/'+name+'_autopsf_solvate.log'
         dst = './'+name+'/log.solvate'
         shutil.move(solvate_log,dst)
