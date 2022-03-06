@@ -1,0 +1,803 @@
+Info) VMD for WIN32, version 1.9.3 (November 30, 2016)
+Info) http://www.ks.uiuc.edu/Research/vmd/                         
+Info) Email questions and bug reports to vmd@ks.uiuc.edu           
+Info) Please include this reference in published work using VMD:   
+Info)    Humphrey, W., Dalke, A. and Schulten, K., `VMD - Visual   
+Info)    Molecular Dynamics', J. Molec. Graphics 1996, 14.1, 33-38.
+Info) -------------------------------------------------------------
+Info) Multithreading available, 8 CPUs detected.
+Info) Free system memory: 4095MB (100%)
+Info) Creating CUDA device pool and initializing hardware...
+Info) Detected 1 available CUDA accelerator:
+Info) [0] GeForce MX350       5 SM_6.1 @ 0.94 GHz, 2.0GB RAM, KTO, AE5, ZCP
+Info) No joysticks found.  Joystick interface disabled.
+Info) Dynamically loaded 75 plugins in directory:
+Info) C:/Program Files (x86)/University of Illinois/VMD/plugins/WIN32/molfile
+1.6.4
+1.7
+1.4
+psfgen) clearing structure, preserving topology and aliases
+psfgen) reading topology file top_all36m_prot.rtf
+
+psfgen) >>>>>>>>CHARMM36 All-Hydrogen Topology File for Proteins <<<<<<
+psfgen) >>>>> Includes phi, psi cross term map (CMAP) correction <<<<<<<
+psfgen) >>>>>>>>>>>>>>>>>>>>>>>>>> May 2011 <<<<<<<<<<<<<<<<<<<<<<<<<<<<
+psfgen)  All comments to the CHARMM web site: www.charmm.org
+psfgen)              parameter set discussion forum
+psfgen) 
+psfgen) Created by CHARMM version 36 1
+psfgen) cross-term entries present in topology definitions
+Info) Using plugin pdb for structure file KE_0_KEMA_0_GC_0_GCMA_28/KE_0_KEMA_0_GC_0_GCMA_28.pdb
+Info) Using plugin pdb for coordinates from file KE_0_KEMA_0_GC_0_GCMA_28/KE_0_KEMA_0_GC_0_GCMA_28.pdb
+Info) Determining bond structure from distance search ...
+Info) Analyzing structure ...
+Info)    Atoms: 20104
+Info)    Bonds: 31528
+Info)    Angles: 0  Dihedrals: 0  Impropers: 0  Cross-terms: 0
+Info)    Bondtypes: 0  Angletypes: 0  Dihedraltypes: 0  Impropertypes: 0
+Info)    Residues: 560
+Info)    Waters: 0
+Info)    Segments: 1
+Info)    Fragments: 28   Protein: 0   Nucleic: 0
+Info) Finished with coordinate file KE_0_KEMA_0_GC_0_GCMA_28/KE_0_KEMA_0_GC_0_GCMA_28.pdb.
+0
+atomselect0
+0 1 10 11 12 13 14 15 16 17 18 19 2 20 21 22 23 24 25 26 27 3 4 5 6 7 8 9
+0
+Info) Opened coordinate file 0.pdb for writing.
+Info) Finished with coordinate file 0.pdb.
+psfgen) building segment 0
+psfgen) reading residues from pdb file 0.pdb
+psfgen) extracted 20 residues from pdb file
+psfgen) Info: generating structure...psfgen) Info: skipping bond C3-O1 at end of segment.
+segment complete.
+psfgen) reading coordinates from pdb file 0.pdb for segment 0
+psfgen) Info: guessing coordinates for 0 atoms (0 non-hydrogen)
+psfgen) regenerating all angles
+psfgen) regenerating all dihedrals
+1
+Info) Opened coordinate file 1.pdb for writing.
+Info) Finished with coordinate file 1.pdb.
+psfgen) building segment 1
+psfgen) reading residues from pdb file 1.pdb
+psfgen) extracted 20 residues from pdb file
+psfgen) Info: generating structure...psfgen) Info: skipping bond C3-O1 at end of segment.
+segment complete.
+psfgen) reading coordinates from pdb file 1.pdb for segment 1
+psfgen) Info: guessing coordinates for 0 atoms (0 non-hydrogen)
+psfgen) regenerating all angles
+psfgen) regenerating all dihedrals
+10
+Info) Opened coordinate file 10.pdb for writing.
+Info) Finished with coordinate file 10.pdb.
+psfgen) building segment 10
+psfgen) reading residues from pdb file 10.pdb
+psfgen) extracted 20 residues from pdb file
+psfgen) Info: generating structure...psfgen) Info: skipping bond C3-O1 at end of segment.
+segment complete.
+psfgen) reading coordinates from pdb file 10.pdb for segment 10
+psfgen) Info: guessing coordinates for 0 atoms (0 non-hydrogen)
+psfgen) regenerating all angles
+psfgen) regenerating all dihedrals
+11
+Info) Opened coordinate file 11.pdb for writing.
+Info) Finished with coordinate file 11.pdb.
+psfgen) building segment 11
+psfgen) reading residues from pdb file 11.pdb
+psfgen) extracted 20 residues from pdb file
+psfgen) Info: generating structure...psfgen) Info: skipping bond C3-O1 at end of segment.
+segment complete.
+psfgen) reading coordinates from pdb file 11.pdb for segment 11
+psfgen) Info: guessing coordinates for 0 atoms (0 non-hydrogen)
+psfgen) regenerating all angles
+psfgen) regenerating all dihedrals
+12
+Info) Opened coordinate file 12.pdb for writing.
+Info) Finished with coordinate file 12.pdb.
+psfgen) building segment 12
+psfgen) reading residues from pdb file 12.pdb
+psfgen) extracted 20 residues from pdb file
+psfgen) Info: generating structure...psfgen) Info: skipping bond C3-O1 at end of segment.
+segment complete.
+psfgen) reading coordinates from pdb file 12.pdb for segment 12
+psfgen) Info: guessing coordinates for 0 atoms (0 non-hydrogen)
+psfgen) regenerating all angles
+psfgen) regenerating all dihedrals
+13
+Info) Opened coordinate file 13.pdb for writing.
+Info) Finished with coordinate file 13.pdb.
+psfgen) building segment 13
+psfgen) reading residues from pdb file 13.pdb
+psfgen) extracted 20 residues from pdb file
+psfgen) Info: generating structure...psfgen) Info: skipping bond C3-O1 at end of segment.
+segment complete.
+psfgen) reading coordinates from pdb file 13.pdb for segment 13
+psfgen) Info: guessing coordinates for 0 atoms (0 non-hydrogen)
+psfgen) regenerating all angles
+psfgen) regenerating all dihedrals
+14
+Info) Opened coordinate file 14.pdb for writing.
+Info) Finished with coordinate file 14.pdb.
+psfgen) building segment 14
+psfgen) reading residues from pdb file 14.pdb
+psfgen) extracted 20 residues from pdb file
+psfgen) Info: generating structure...psfgen) Info: skipping bond C3-O1 at end of segment.
+segment complete.
+psfgen) reading coordinates from pdb file 14.pdb for segment 14
+psfgen) Info: guessing coordinates for 0 atoms (0 non-hydrogen)
+psfgen) regenerating all angles
+psfgen) regenerating all dihedrals
+15
+Info) Opened coordinate file 15.pdb for writing.
+Info) Finished with coordinate file 15.pdb.
+psfgen) building segment 15
+psfgen) reading residues from pdb file 15.pdb
+psfgen) extracted 20 residues from pdb file
+psfgen) Info: generating structure...psfgen) Info: skipping bond C3-O1 at end of segment.
+segment complete.
+psfgen) reading coordinates from pdb file 15.pdb for segment 15
+psfgen) Info: guessing coordinates for 0 atoms (0 non-hydrogen)
+psfgen) regenerating all angles
+psfgen) regenerating all dihedrals
+16
+Info) Opened coordinate file 16.pdb for writing.
+Info) Finished with coordinate file 16.pdb.
+psfgen) building segment 16
+psfgen) reading residues from pdb file 16.pdb
+psfgen) extracted 20 residues from pdb file
+psfgen) Info: generating structure...psfgen) Info: skipping bond C3-O1 at end of segment.
+segment complete.
+psfgen) reading coordinates from pdb file 16.pdb for segment 16
+psfgen) Info: guessing coordinates for 0 atoms (0 non-hydrogen)
+psfgen) regenerating all angles
+psfgen) regenerating all dihedrals
+17
+Info) Opened coordinate file 17.pdb for writing.
+Info) Finished with coordinate file 17.pdb.
+psfgen) building segment 17
+psfgen) reading residues from pdb file 17.pdb
+psfgen) extracted 20 residues from pdb file
+psfgen) Info: generating structure...psfgen) Info: skipping bond C3-O1 at end of segment.
+segment complete.
+psfgen) reading coordinates from pdb file 17.pdb for segment 17
+psfgen) Info: guessing coordinates for 0 atoms (0 non-hydrogen)
+psfgen) regenerating all angles
+psfgen) regenerating all dihedrals
+18
+Info) Opened coordinate file 18.pdb for writing.
+Info) Finished with coordinate file 18.pdb.
+psfgen) building segment 18
+psfgen) reading residues from pdb file 18.pdb
+psfgen) extracted 20 residues from pdb file
+psfgen) Info: generating structure...psfgen) Info: skipping bond C3-O1 at end of segment.
+segment complete.
+psfgen) reading coordinates from pdb file 18.pdb for segment 18
+psfgen) Info: guessing coordinates for 0 atoms (0 non-hydrogen)
+psfgen) regenerating all angles
+psfgen) regenerating all dihedrals
+19
+Info) Opened coordinate file 19.pdb for writing.
+Info) Finished with coordinate file 19.pdb.
+psfgen) building segment 19
+psfgen) reading residues from pdb file 19.pdb
+psfgen) extracted 20 residues from pdb file
+psfgen) Info: generating structure...psfgen) Info: skipping bond C3-O1 at end of segment.
+segment complete.
+psfgen) reading coordinates from pdb file 19.pdb for segment 19
+psfgen) Info: guessing coordinates for 0 atoms (0 non-hydrogen)
+psfgen) regenerating all angles
+psfgen) regenerating all dihedrals
+2
+Info) Opened coordinate file 2.pdb for writing.
+Info) Finished with coordinate file 2.pdb.
+psfgen) building segment 2
+psfgen) reading residues from pdb file 2.pdb
+psfgen) extracted 20 residues from pdb file
+psfgen) Info: generating structure...psfgen) Info: skipping bond C3-O1 at end of segment.
+segment complete.
+psfgen) reading coordinates from pdb file 2.pdb for segment 2
+psfgen) Info: guessing coordinates for 0 atoms (0 non-hydrogen)
+psfgen) regenerating all angles
+psfgen) regenerating all dihedrals
+20
+Info) Opened coordinate file 20.pdb for writing.
+Info) Finished with coordinate file 20.pdb.
+psfgen) building segment 20
+psfgen) reading residues from pdb file 20.pdb
+psfgen) extracted 20 residues from pdb file
+psfgen) Info: generating structure...psfgen) Info: skipping bond C3-O1 at end of segment.
+segment complete.
+psfgen) reading coordinates from pdb file 20.pdb for segment 20
+psfgen) Info: guessing coordinates for 0 atoms (0 non-hydrogen)
+psfgen) regenerating all angles
+psfgen) regenerating all dihedrals
+21
+Info) Opened coordinate file 21.pdb for writing.
+Info) Finished with coordinate file 21.pdb.
+psfgen) building segment 21
+psfgen) reading residues from pdb file 21.pdb
+psfgen) extracted 20 residues from pdb file
+psfgen) Info: generating structure...psfgen) Info: skipping bond C3-O1 at end of segment.
+segment complete.
+psfgen) reading coordinates from pdb file 21.pdb for segment 21
+psfgen) Info: guessing coordinates for 0 atoms (0 non-hydrogen)
+psfgen) regenerating all angles
+psfgen) regenerating all dihedrals
+22
+Info) Opened coordinate file 22.pdb for writing.
+Info) Finished with coordinate file 22.pdb.
+psfgen) building segment 22
+psfgen) reading residues from pdb file 22.pdb
+psfgen) extracted 20 residues from pdb file
+psfgen) Info: generating structure...psfgen) Info: skipping bond C3-O1 at end of segment.
+segment complete.
+psfgen) reading coordinates from pdb file 22.pdb for segment 22
+psfgen) Info: guessing coordinates for 0 atoms (0 non-hydrogen)
+psfgen) regenerating all angles
+psfgen) regenerating all dihedrals
+23
+Info) Opened coordinate file 23.pdb for writing.
+Info) Finished with coordinate file 23.pdb.
+psfgen) building segment 23
+psfgen) reading residues from pdb file 23.pdb
+psfgen) extracted 20 residues from pdb file
+psfgen) Info: generating structure...psfgen) Info: skipping bond C3-O1 at end of segment.
+segment complete.
+psfgen) reading coordinates from pdb file 23.pdb for segment 23
+psfgen) Info: guessing coordinates for 0 atoms (0 non-hydrogen)
+psfgen) regenerating all angles
+psfgen) regenerating all dihedrals
+24
+Info) Opened coordinate file 24.pdb for writing.
+Info) Finished with coordinate file 24.pdb.
+psfgen) building segment 24
+psfgen) reading residues from pdb file 24.pdb
+psfgen) extracted 20 residues from pdb file
+psfgen) Info: generating structure...psfgen) Info: skipping bond C3-O1 at end of segment.
+segment complete.
+psfgen) reading coordinates from pdb file 24.pdb for segment 24
+psfgen) Info: guessing coordinates for 0 atoms (0 non-hydrogen)
+psfgen) regenerating all angles
+psfgen) regenerating all dihedrals
+25
+Info) Opened coordinate file 25.pdb for writing.
+Info) Finished with coordinate file 25.pdb.
+psfgen) building segment 25
+psfgen) reading residues from pdb file 25.pdb
+psfgen) extracted 20 residues from pdb file
+psfgen) Info: generating structure...psfgen) Info: skipping bond C3-O1 at end of segment.
+segment complete.
+psfgen) reading coordinates from pdb file 25.pdb for segment 25
+psfgen) Info: guessing coordinates for 0 atoms (0 non-hydrogen)
+psfgen) regenerating all angles
+psfgen) regenerating all dihedrals
+26
+Info) Opened coordinate file 26.pdb for writing.
+Info) Finished with coordinate file 26.pdb.
+psfgen) building segment 26
+psfgen) reading residues from pdb file 26.pdb
+psfgen) extracted 20 residues from pdb file
+psfgen) Info: generating structure...psfgen) Info: skipping bond C3-O1 at end of segment.
+segment complete.
+psfgen) reading coordinates from pdb file 26.pdb for segment 26
+psfgen) Info: guessing coordinates for 0 atoms (0 non-hydrogen)
+psfgen) regenerating all angles
+psfgen) regenerating all dihedrals
+27
+Info) Opened coordinate file 27.pdb for writing.
+Info) Finished with coordinate file 27.pdb.
+psfgen) building segment 27
+psfgen) reading residues from pdb file 27.pdb
+psfgen) extracted 20 residues from pdb file
+psfgen) Info: generating structure...psfgen) Info: skipping bond C3-O1 at end of segment.
+segment complete.
+psfgen) reading coordinates from pdb file 27.pdb for segment 27
+psfgen) Info: guessing coordinates for 0 atoms (0 non-hydrogen)
+psfgen) regenerating all angles
+psfgen) regenerating all dihedrals
+3
+Info) Opened coordinate file 3.pdb for writing.
+Info) Finished with coordinate file 3.pdb.
+psfgen) building segment 3
+psfgen) reading residues from pdb file 3.pdb
+psfgen) extracted 20 residues from pdb file
+psfgen) Info: generating structure...psfgen) Info: skipping bond C3-O1 at end of segment.
+segment complete.
+psfgen) reading coordinates from pdb file 3.pdb for segment 3
+psfgen) Info: guessing coordinates for 0 atoms (0 non-hydrogen)
+psfgen) regenerating all angles
+psfgen) regenerating all dihedrals
+4
+Info) Opened coordinate file 4.pdb for writing.
+Info) Finished with coordinate file 4.pdb.
+psfgen) building segment 4
+psfgen) reading residues from pdb file 4.pdb
+psfgen) extracted 20 residues from pdb file
+psfgen) Info: generating structure...psfgen) Info: skipping bond C3-O1 at end of segment.
+segment complete.
+psfgen) reading coordinates from pdb file 4.pdb for segment 4
+psfgen) Info: guessing coordinates for 0 atoms (0 non-hydrogen)
+psfgen) regenerating all angles
+psfgen) regenerating all dihedrals
+5
+Info) Opened coordinate file 5.pdb for writing.
+Info) Finished with coordinate file 5.pdb.
+psfgen) building segment 5
+psfgen) reading residues from pdb file 5.pdb
+psfgen) extracted 20 residues from pdb file
+psfgen) Info: generating structure...psfgen) Info: skipping bond C3-O1 at end of segment.
+segment complete.
+psfgen) reading coordinates from pdb file 5.pdb for segment 5
+psfgen) Info: guessing coordinates for 0 atoms (0 non-hydrogen)
+psfgen) regenerating all angles
+psfgen) regenerating all dihedrals
+6
+Info) Opened coordinate file 6.pdb for writing.
+Info) Finished with coordinate file 6.pdb.
+psfgen) building segment 6
+psfgen) reading residues from pdb file 6.pdb
+psfgen) extracted 20 residues from pdb file
+psfgen) Info: generating structure...psfgen) Info: skipping bond C3-O1 at end of segment.
+segment complete.
+psfgen) reading coordinates from pdb file 6.pdb for segment 6
+psfgen) Info: guessing coordinates for 0 atoms (0 non-hydrogen)
+psfgen) regenerating all angles
+psfgen) regenerating all dihedrals
+7
+Info) Opened coordinate file 7.pdb for writing.
+Info) Finished with coordinate file 7.pdb.
+psfgen) building segment 7
+psfgen) reading residues from pdb file 7.pdb
+psfgen) extracted 20 residues from pdb file
+psfgen) Info: generating structure...psfgen) Info: skipping bond C3-O1 at end of segment.
+segment complete.
+psfgen) reading coordinates from pdb file 7.pdb for segment 7
+psfgen) Info: guessing coordinates for 0 atoms (0 non-hydrogen)
+psfgen) regenerating all angles
+psfgen) regenerating all dihedrals
+8
+Info) Opened coordinate file 8.pdb for writing.
+Info) Finished with coordinate file 8.pdb.
+psfgen) building segment 8
+psfgen) reading residues from pdb file 8.pdb
+psfgen) extracted 20 residues from pdb file
+psfgen) Info: generating structure...psfgen) Info: skipping bond C3-O1 at end of segment.
+segment complete.
+psfgen) reading coordinates from pdb file 8.pdb for segment 8
+psfgen) Info: guessing coordinates for 0 atoms (0 non-hydrogen)
+psfgen) regenerating all angles
+psfgen) regenerating all dihedrals
+9
+Info) Opened coordinate file 9.pdb for writing.
+Info) Finished with coordinate file 9.pdb.
+psfgen) building segment 9
+psfgen) reading residues from pdb file 9.pdb
+psfgen) extracted 20 residues from pdb file
+psfgen) Info: generating structure...psfgen) Info: skipping bond C3-O1 at end of segment.
+segment complete.
+psfgen) reading coordinates from pdb file 9.pdb for segment 9
+psfgen) Info: guessing coordinates for 0 atoms (0 non-hydrogen)
+psfgen) regenerating all angles
+psfgen) regenerating all dihedrals
+psfgen) Info: writing pdb file KE_0_KEMA_0_GC_0_GCMA_28/KE_0_KEMA_0_GC_0_GCMA_28_autopsf.pdb
+psfgen) Info: pdb file complete.
+psfgen) Info: writing psf file KE_0_KEMA_0_GC_0_GCMA_28/KE_0_KEMA_0_GC_0_GCMA_28_autopsf.psf
+psfgen) total of 20104 atoms
+psfgen) total of 20636 bonds
+psfgen) total of 37688 angles
+psfgen) total of 54600 dihedrals
+psfgen) total of 420 impropers
+psfgen) total of 0 explicit exclusions
+psfgen) Structure requires EXTended PSF format
+psfgen) total of 0 cross-terms
+psfgen) Info: psf file complete.
+psfgen) clearing structure, preserving topology and aliases
+Info) generating solute plus one replica of water...
+psfgen) reading structure from psf file KE_0_KEMA_0_GC_0_GCMA_28/KE_0_KEMA_0_GC_0_GCMA_28_autopsf.psf
+psfgen) psf file does not contain cross-terms
+psfgen) reading coordinates from pdb file KE_0_KEMA_0_GC_0_GCMA_28/KE_0_KEMA_0_GC_0_GCMA_28_autopsf.pdb
+psfgen) reading structure from psf file C:/Program Files (x86)/University of Illinois/VMD/plugins/noarch/tcl/solvate1.7/wat.psf
+psfgen) psf file does not contain cross-terms
+psfgen) reading coordinates from pdb file C:/Program Files (x86)/University of Illinois/VMD/plugins/noarch/tcl/solvate1.7/wat.pdb
+psfgen) Info: writing psf file combine.psf
+psfgen) total of 47887 atoms
+psfgen) total of 39158 bonds
+psfgen) total of 56210 angles
+psfgen) total of 54600 dihedrals
+psfgen) total of 420 impropers
+psfgen) total of 0 explicit exclusions
+psfgen) Structure requires EXTended PSF format
+psfgen) total of 0 cross-terms
+psfgen) Info: psf file complete.
+psfgen) Info: writing pdb file combine.pdb
+psfgen) Info: pdb file complete.
+Info) Using plugin psf for structure file combine.psf
+Info) Analyzing structure ...
+Info)    Atoms: 47887
+Info)    Bonds: 39158
+Info)    Angles: 56210  Dihedrals: 54600  Impropers: 420  Cross-terms: 0
+Info)    Bondtypes: 0  Angletypes: 0  Dihedraltypes: 0  Impropertypes: 0
+Info)    Residues: 9821
+Info)    Waters: 9261
+Info)    Segments: 29
+Info)    Fragments: 9289   Protein: 0   Nucleic: 0
+Info) Using plugin pdb for coordinates from file combine.pdb
+Info) Finished with coordinate file combine.pdb.
+Info) generating water residue lists...
+Info) single water residue type, creating residue list...
+Info) replicating 27 water segments, 3 by 3 by 3
+psfgen) reading topology file C:/Program Files (x86)/University of Illinois/VMD/plugins/noarch/tcl/solvate1.7/wat.top
+
+psfgen) >>>>>> Combined CHARMM All-Hydrogen Topology File for <<<<<<<<<
+psfgen) >>>>>>>>> CHARMM22 Proteins and CHARMM27 Lipids <<<<<<<<<<
+psfgen) from
+psfgen) >>>>>>>>CHARMM22 All-Hydrogen Topology File for Proteins <<<<<<
+psfgen) >>>>>>>>>>>>>>>>>>>>> August 1999 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+psfgen) >>>>>>> Direct comments to Alexander D. MacKerell Jr. <<<<<<<<<
+psfgen) >>>>>> 410-706-7442 or email: alex,mmiris.ab.umd.edu  <<<<<<<<<
+psfgen) and
+psfgen)   \\\\\\\ CHARMM27 All-Hydrogen Lipid Topology File ///////
+psfgen)   \\\\\\\\\\\\\\\\\\ Developmental /////////////////////////
+psfgen) 		Alexander D. MacKerell Jr.
+psfgen) 			August 1999
+psfgen)  All comments to ADM jr.  email: alex,mmiris.ab.umd.edu
+psfgen) 		telephone: 410-706-7442
+psfgen) 
+psfgen) Created by CHARMM version 27 1
+psfgen) building segment WT1
+psfgen) setting patch for first residue to NONE
+psfgen) setting patch for last residue to NONE
+psfgen) Info: generating structure...segment complete.
+psfgen) building segment WT2
+psfgen) setting patch for first residue to NONE
+psfgen) setting patch for last residue to NONE
+psfgen) Info: generating structure...segment complete.
+psfgen) building segment WT3
+psfgen) setting patch for first residue to NONE
+psfgen) setting patch for last residue to NONE
+psfgen) Info: generating structure...segment complete.
+psfgen) building segment WT4
+psfgen) setting patch for first residue to NONE
+psfgen) setting patch for last residue to NONE
+psfgen) Info: generating structure...segment complete.
+psfgen) building segment WT5
+psfgen) setting patch for first residue to NONE
+psfgen) setting patch for last residue to NONE
+psfgen) Info: generating structure...segment complete.
+psfgen) building segment WT6
+psfgen) setting patch for first residue to NONE
+psfgen) setting patch for last residue to NONE
+psfgen) Info: generating structure...segment complete.
+psfgen) building segment WT7
+psfgen) setting patch for first residue to NONE
+psfgen) setting patch for last residue to NONE
+psfgen) Info: generating structure...segment complete.
+psfgen) building segment WT8
+psfgen) setting patch for first residue to NONE
+psfgen) setting patch for last residue to NONE
+psfgen) Info: generating structure...segment complete.
+psfgen) building segment WT9
+psfgen) setting patch for first residue to NONE
+psfgen) setting patch for last residue to NONE
+psfgen) Info: generating structure...segment complete.
+psfgen) building segment WT10
+psfgen) setting patch for first residue to NONE
+psfgen) setting patch for last residue to NONE
+psfgen) Info: generating structure...segment complete.
+psfgen) building segment WT11
+psfgen) setting patch for first residue to NONE
+psfgen) setting patch for last residue to NONE
+psfgen) Info: generating structure...segment complete.
+psfgen) building segment WT12
+psfgen) setting patch for first residue to NONE
+psfgen) setting patch for last residue to NONE
+psfgen) Info: generating structure...segment complete.
+psfgen) building segment WT13
+psfgen) setting patch for first residue to NONE
+psfgen) setting patch for last residue to NONE
+psfgen) Info: generating structure...segment complete.
+psfgen) building segment WT14
+psfgen) setting patch for first residue to NONE
+psfgen) setting patch for last residue to NONE
+psfgen) Info: generating structure...segment complete.
+psfgen) building segment WT15
+psfgen) setting patch for first residue to NONE
+psfgen) setting patch for last residue to NONE
+psfgen) Info: generating structure...segment complete.
+psfgen) building segment WT16
+psfgen) setting patch for first residue to NONE
+psfgen) setting patch for last residue to NONE
+psfgen) Info: generating structure...segment complete.
+psfgen) building segment WT17
+psfgen) setting patch for first residue to NONE
+psfgen) setting patch for last residue to NONE
+psfgen) Info: generating structure...segment complete.
+psfgen) building segment WT18
+psfgen) setting patch for first residue to NONE
+psfgen) setting patch for last residue to NONE
+psfgen) Info: generating structure...segment complete.
+psfgen) building segment WT19
+psfgen) setting patch for first residue to NONE
+psfgen) setting patch for last residue to NONE
+psfgen) Info: generating structure...segment complete.
+psfgen) building segment WT20
+psfgen) setting patch for first residue to NONE
+psfgen) setting patch for last residue to NONE
+psfgen) Info: generating structure...segment complete.
+psfgen) building segment WT21
+psfgen) setting patch for first residue to NONE
+psfgen) setting patch for last residue to NONE
+psfgen) Info: generating structure...segment complete.
+psfgen) building segment WT22
+psfgen) setting patch for first residue to NONE
+psfgen) setting patch for last residue to NONE
+psfgen) Info: generating structure...segment complete.
+psfgen) building segment WT23
+psfgen) setting patch for first residue to NONE
+psfgen) setting patch for last residue to NONE
+psfgen) Info: generating structure...segment complete.
+psfgen) building segment WT24
+psfgen) setting patch for first residue to NONE
+psfgen) setting patch for last residue to NONE
+psfgen) Info: generating structure...segment complete.
+psfgen) building segment WT25
+psfgen) setting patch for first residue to NONE
+psfgen) setting patch for last residue to NONE
+psfgen) Info: generating structure...segment complete.
+psfgen) building segment WT26
+psfgen) setting patch for first residue to NONE
+psfgen) setting patch for last residue to NONE
+psfgen) Info: generating structure...segment complete.
+psfgen) building segment WT27
+psfgen) setting patch for first residue to NONE
+psfgen) setting patch for last residue to NONE
+psfgen) Info: generating structure...segment complete.
+psfgen) Info: writing psf file KE_0_KEMA_0_GC_0_GCMA_28/KE_0_KEMA_0_GC_0_GCMA_28_autopsf_solvate.psf
+psfgen) total of 391963 atoms
+psfgen) total of 268542 bonds
+psfgen) total of 161641 angles
+psfgen) total of 54600 dihedrals
+psfgen) total of 420 impropers
+psfgen) total of 0 explicit exclusions
+psfgen) Structure requires EXTended PSF format
+psfgen) total of 0 cross-terms
+psfgen) Info: psf file complete.
+psfgen) Info: writing pdb file KE_0_KEMA_0_GC_0_GCMA_28/KE_0_KEMA_0_GC_0_GCMA_28_autopsf_solvate.pdb
+psfgen) Info: pdb file complete.
+psfgen) clearing structure, preserving topology and aliases
+Info) Using plugin psf for structure file KE_0_KEMA_0_GC_0_GCMA_28/KE_0_KEMA_0_GC_0_GCMA_28_autopsf_solvate.psf
+Info) Analyzing structure ...
+Info)    Atoms: 391963
+Info)    Bonds: 268542
+Info)    Angles: 161641  Dihedrals: 54600  Impropers: 420  Cross-terms: 0
+Info)    Bondtypes: 0  Angletypes: 0  Dihedraltypes: 0  Impropertypes: 0
+Info)    Residues: 124513
+Info)    Waters: 123953
+Info)    Segments: 55
+Info)    Fragments: 123981   Protein: 0   Nucleic: 0
+Info) Using plugin pdb for coordinates from file KE_0_KEMA_0_GC_0_GCMA_28/KE_0_KEMA_0_GC_0_GCMA_28_autopsf_solvate.pdb
+Info) Finished with coordinate file KE_0_KEMA_0_GC_0_GCMA_28/KE_0_KEMA_0_GC_0_GCMA_28_autopsf_solvate.pdb.
+Info) Opened coordinate file KE_0_KEMA_0_GC_0_GCMA_28/KE_0_KEMA_0_GC_0_GCMA_28_autopsf_solvate.pdb for writing.
+Info) Coordinate I/O rate 0.44 frames/sec, 1 MB/sec, 4.6 sec
+Info) Finished with coordinate file KE_0_KEMA_0_GC_0_GCMA_28/KE_0_KEMA_0_GC_0_GCMA_28_autopsf_solvate.pdb.
+Info) Extra structure overlap safety check...
+Info) Solvate completed successfully.
+Autoionize) Reading KE_0_KEMA_0_GC_0_GCMA_28/KE_0_KEMA_0_GC_0_GCMA_28_autopsf_solvate.psf/KE_0_KEMA_0_GC_0_GCMA_28/KE_0_KEMA_0_GC_0_GCMA_28_autopsf_solvate.pdb...
+psfgen) clearing structure, preserving topology and aliases
+psfgen) reading structure from psf file KE_0_KEMA_0_GC_0_GCMA_28/KE_0_KEMA_0_GC_0_GCMA_28_autopsf_solvate.psf
+psfgen) psf file does not contain cross-terms
+psfgen) reading coordinates from pdb file KE_0_KEMA_0_GC_0_GCMA_28/KE_0_KEMA_0_GC_0_GCMA_28_autopsf_solvate.pdb
+Info) Using plugin psf for structure file KE_0_KEMA_0_GC_0_GCMA_28/KE_0_KEMA_0_GC_0_GCMA_28_autopsf_solvate.psf
+Info) Analyzing structure ...
+Info)    Atoms: 391963
+Info)    Bonds: 268542
+Info)    Angles: 161641  Dihedrals: 54600  Impropers: 420  Cross-terms: 0
+Info)    Bondtypes: 0  Angletypes: 0  Dihedraltypes: 0  Impropertypes: 0
+Info)    Residues: 124513
+Info)    Waters: 123953
+Info)    Segments: 55
+Info)    Fragments: 123981   Protein: 0   Nucleic: 0
+Info) Using plugin pdb for coordinates from file KE_0_KEMA_0_GC_0_GCMA_28/KE_0_KEMA_0_GC_0_GCMA_28_autopsf_solvate.pdb
+Info) Finished with coordinate file KE_0_KEMA_0_GC_0_GCMA_28/KE_0_KEMA_0_GC_0_GCMA_28_autopsf_solvate.pdb.
+Autoionize) System net charge before adding ions: 2.7120113372802734e-6e.
+Autoionize) Number of ions required for neutralizing the system: 0 SOD and 0 CLA.
+Autoionize) Desired salt concentration: 0.15 mol/L.
+Autoionize) Ions to be placed:
+Autoionize)   348 SOD
+Autoionize)   348 CLA
+Autoionize) Required min distance from molecule: 5A.
+Autoionize) Required min distance between ions: 5A.
+Autoionize) Output file prefix 'KE_0_KEMA_0_GC_0_GCMA_28/KE_0_KEMA_0_GC_0_GCMA_28_autopsf_solvate_ionzied'.
+Autoionize) Ions will be added to segname ION.
+Autoionize) Obtained positions for 696 ions.
+Autoionize) Tagged 696 water molecules for deletion.
+Autoionize) Deleted 696 water molecules.
+Autoionize) Reading CHARMM topology file...
+psfgen) reading topology file C:/Program Files (x86)/University of Illinois/VMD/plugins/noarch/tcl/readcharmmtop1.2/toppar_water_ions_namd.str
+
+psfgen)  Toplogy and parameter information for water and ions.
+psfgen) 
+psfgen) reading topology from stream file
+psfgen)  Topology for water and ions
+psfgen) 
+psfgen) 31  1
+psfgen)  Parameters for water and ions
+psfgen) 
+psfgen) ERROR!  Failed to parse atom statement.  Line 152: ATOMS
+
+psfgen) duplicate type key HT
+psfgen) duplicate type key HX
+psfgen) duplicate type key OT
+psfgen) duplicate type key OX
+psfgen) duplicate type key LIT
+psfgen) duplicate type key SOD
+psfgen) duplicate type key MG
+psfgen) duplicate type key POT
+psfgen) duplicate type key CAL
+psfgen) duplicate type key RUB
+psfgen) duplicate type key CES
+psfgen) duplicate type key BAR
+psfgen) duplicate type key ZN
+psfgen) duplicate type key CAD
+psfgen) duplicate type key CLA
+psfgen) ERROR!  Failed to parse bond statement.  Line 169: BONDS
+
+psfgen) ERROR!  FAILED TO RECOGNIZE HT.  Line 178: HT    HT      0.0       1.5139  ! from TIPS3P geometry (for SHAKE w/PARAM)
+
+psfgen) ERROR!  FAILED TO RECOGNIZE HT.  Line 179: HT    OT    450.0       0.9572  ! from TIPS3P geometry
+
+psfgen) ERROR!  FAILED TO RECOGNIZE OX.  Line 180: OX    HX    545.0       0.9700  ! hydroxide ion
+
+psfgen) ERROR!  Failed to parse angle statement.  Line 182: ANGLES
+
+psfgen) ERROR!  FAILED TO RECOGNIZE HT.  Line 195: HT   OT   HT     55.0      104.52   ! FROM TIPS3P GEOMETRY
+
+psfgen) ERROR!  Failed to parse dihedral statement.  Line 197: DIHEDRALS
+
+psfgen) ERROR!  Failed to parse improper statement.  Line 210: IMPROPER
+
+psfgen) ERROR!  FAILED TO RECOGNIZE NONBONDED.  Line 221: NONBONDED nbxmod  5 atom cdiel shift vatom vdistance vswitch -
+
+psfgen) ERROR!  FAILED TO RECOGNIZE CUTNB.  Line 222: cutnb 14.0 ctofnb 12.0 ctonnb 10.0 eps 1.0 e14fac 1.0 wmin 1.5
+
+psfgen) ERROR!  FAILED TO RECOGNIZE HT.  Line 225: HT       0.0       -0.046     0.2245
+
+psfgen) ERROR!  FAILED TO RECOGNIZE OT.  Line 226: OT       0.0       -0.1521    1.7682
+
+psfgen) ERROR!  FAILED TO RECOGNIZE OX.  Line 229: OX     0.000000  -0.120000     1.700000 ! ALLOW   POL ION
+
+psfgen) ERROR!  FAILED TO RECOGNIZE HX.  Line 231: HX     0.000000  -0.046000     0.224500 ! ALLOW PEP POL SUL ARO ALC
+
+psfgen) ERROR!  FAILED TO RECOGNIZE LIT.  Line 235: LIT      0.0      -0.00233       1.2975  ! Lithium
+
+psfgen) ERROR!  FAILED TO RECOGNIZE SOD.  Line 237: SOD      0.0       -0.0469    1.41075  ! new CHARMM Sodium 
+
+psfgen) ERROR!  FAILED TO RECOGNIZE MG.  Line 239: MG       0.0       -0.0150    1.18500   ! Magnesium
+
+psfgen) ERROR!  FAILED TO RECOGNIZE POT.  Line 241: POT      0.0       -0.0870    1.76375   ! Potassium
+
+psfgen) ERROR!  FAILED TO RECOGNIZE CAL.  Line 243: CAL      0.0       -0.120      1.367    ! Calcium
+
+psfgen) ERROR!  FAILED TO RECOGNIZE RUB.  Line 245: RUB      0.0000    -0.15      1.90      ! Rubidium
+
+psfgen) ERROR!  FAILED TO RECOGNIZE CES.  Line 247: CES      0.0       -0.1900    2.100     ! Cesium
+
+psfgen) ERROR!  FAILED TO RECOGNIZE BAR.  Line 249: BAR      0.0       -0.150     1.890     ! Barium
+
+psfgen) ERROR!  FAILED TO RECOGNIZE ZN.  Line 251: ZN     0.000000  -0.250000     1.090000 ! Zinc
+
+psfgen) ERROR!  FAILED TO RECOGNIZE CAD.  Line 253: CAD    0.000000  -0.120000     1.357000 ! Cadmium
+
+psfgen) ERROR!  FAILED TO RECOGNIZE CLA.  Line 255: CLA      0.0       -0.150      2.27     ! Chloride
+
+psfgen) ERROR!  FAILED TO RECOGNIZE NBFIX.  Line 258: NBFIX
+
+psfgen) ERROR!  FAILED TO RECOGNIZE SOD.  Line 261: SOD    CLA      -0.083875   3.731 !  From osmotic pressure calibration, J. Phys.Chem.Lett. 1:183-189
+
+psfgen) ERROR!  FAILED TO RECOGNIZE POT.  Line 262: POT    CLA      -0.114236   4.081 !  From osmotic pressure calibration, J. Phys.Chem.Lett. 1:183-189
+
+psfgen)  NBFix between carboxylate and sodium
+psfgen) 
+psfgen) skipping statements at end of file due to end or return statement
+psfgen) building segment ION
+psfgen) setting patch for first residue to NONE
+psfgen) setting patch for last residue to NONE
+psfgen) Info: generating structure...segment complete.
+Autoionize) Randomizing ion positions...
+Autoionize) Assigning ion coordinates...
+psfgen) Info: writing psf file KE_0_KEMA_0_GC_0_GCMA_28/KE_0_KEMA_0_GC_0_GCMA_28_autopsf_solvate_ionzied.psf
+psfgen) total of 390571 atoms
+psfgen) total of 267150 bonds
+psfgen) total of 160945 angles
+psfgen) total of 54600 dihedrals
+psfgen) total of 420 impropers
+psfgen) total of 0 explicit exclusions
+psfgen) Structure requires EXTended PSF format
+psfgen) total of 0 cross-terms
+psfgen) Info: psf file complete.
+psfgen) Info: writing pdb file KE_0_KEMA_0_GC_0_GCMA_28/KE_0_KEMA_0_GC_0_GCMA_28_autopsf_solvate_ionzied.pdb
+psfgen) Info: pdb file complete.
+Autoionize) Loading new system with added ions...
+Info) Using plugin psf for structure file KE_0_KEMA_0_GC_0_GCMA_28/KE_0_KEMA_0_GC_0_GCMA_28_autopsf_solvate_ionzied.psf
+Info) Analyzing structure ...
+Info)    Atoms: 390571
+Info)    Bonds: 267150
+Info)    Angles: 160945  Dihedrals: 54600  Impropers: 420  Cross-terms: 0
+Info)    Bondtypes: 0  Angletypes: 0  Dihedraltypes: 0  Impropertypes: 0
+Info)    Residues: 124513
+Info)    Waters: 123257
+Info)    Segments: 56
+Info)    Fragments: 123981   Protein: 0   Nucleic: 0
+Info) Using plugin pdb for coordinates from file KE_0_KEMA_0_GC_0_GCMA_28/KE_0_KEMA_0_GC_0_GCMA_28_autopsf_solvate_ionzied.pdb
+Info) Finished with coordinate file KE_0_KEMA_0_GC_0_GCMA_28/KE_0_KEMA_0_GC_0_GCMA_28_autopsf_solvate_ionzied.pdb.
+Info) Opened coordinate file KE_0_KEMA_0_GC_0_GCMA_28/KE_0_KEMA_0_GC_0_GCMA_28_autopsf_solvate_ionzied.pdb for writing.
+Info) Coordinate I/O rate 0.60 frames/sec, 2 MB/sec, 3.3 sec
+Info) Finished with coordinate file KE_0_KEMA_0_GC_0_GCMA_28/KE_0_KEMA_0_GC_0_GCMA_28_autopsf_solvate_ionzied.pdb.
+Autoionize) System net charge after adding ions: 2.7120113372802734e-6e.
+Autoionize) All done.
+Info) VMD for WIN32, version 1.9.3 (November 30, 2016)
+Info) Exiting normally.
+vmd > psfplugin) Detected a Charmm PSF EXTEnded file
+psfplugin) no cross-terms defined in PSF file.
+psfplugin) Detected a Charmm PSF EXTEnded file
+psfplugin) no cross-terms defined in PSF file.
+psfplugin) Detected a Charmm PSF EXTEnded file
+psfplugin) no cross-terms defined in PSF file.
+psfplugin) Detected a Charmm PSF EXTEnded file
+psfplugin) no cross-terms defined in PSF file.
+0:20 
+0:1 
+1:20 
+1:1 
+10:20 
+10:1 
+11:20 
+11:1 
+12:20 
+12:1 
+13:20 
+13:1 
+14:20 
+14:1 
+15:20 
+15:1 
+16:20 
+16:1 
+17:20 
+17:1 
+18:20 
+18:1 
+19:20 
+19:1 
+2:20 
+2:1 
+20:20 
+20:1 
+21:20 
+21:1 
+22:20 
+22:1 
+23:20 
+23:1 
+24:20 
+24:1 
+25:20 
+25:1 
+26:20 
+26:1 
+27:20 
+27:1 
+3:20 
+3:1 
+4:20 
+4:1 
+5:20 
+5:1 
+6:20 
+6:1 
+7:20 
+7:1 
+8:20 
+8:1 
+9:20 
+9:1 

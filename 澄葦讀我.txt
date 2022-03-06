@@ -1,0 +1,31 @@
+使用方法：
+python model.py [KE組數] [KEMA組數] [GC條數] [GCMA條數] [盒子長度] [刪除中間檔案(1刪除0不刪除)]
+(每組KE有8條)
+
+
+1. 建立由1組KE組成的模型，設定盒子大小為150A，並且保留中間生成的檔案：
+> python model.py 1 0 0 0 150 0
+執行後會生成資料夾：KE_1_KEMA_0_GC_0_GCMA_0
+
+
+2. 建立由1組KEMA和21條GCMA組成的模型，設定盒子大小為150A，並且刪除中間生成的檔案：
+> python model.py 0 1 0 21 150 1
+執行後會生成資料夾：KE_0_KEMA_1_GC_0_GCMA_21
+
+
+3. 建立由21條GC組成的模型，設定盒子大小為100A，並且保留中間生成的檔案：
+> python model.py 0 0 21 0 100 0
+執行後會生成資料夾：KE_0_KEMA_1_GC_0_GCMA_21
+
+
+4.目前不支援同時含有KE和KEMA的模型
+> python model.py 1 1 0 0 150 0
+Error: Do not support KE and KEMA in same system
+
+3/4
+刪除不連續的input.pdb的原子
+
+3/6更新
+1. 把charmm36移入上傳TWCC的資料夾內
+2. 如果只包含一條GC或GCMA，自動將座標旋轉並對其x,y,z軸，以得到最小的water box
+3. 增加equilibrium和production的差別，eq無pppm，pro有pppm

@@ -1,0 +1,13 @@
+
+tolerance 2.0
+
+filetype pdb
+
+output ./KE_0_KEMA_0_GC_0_GCMA_1/KE_0_KEMA_0_GC_0_GCMA_1.pdb
+
+add_box_sides 2.0
+
+structure ./input_pdb/20mer_7GCMA_3GC.pdb 
+  number 1
+  inside box 0. 0. 0. 90. 90. 90.
+end structure                          
