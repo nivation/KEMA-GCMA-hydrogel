@@ -7,13 +7,13 @@ KEMA組數      :no default
 GC條數        :no default
 GCMA條數      :no default
 水的數量      :negative integer for VMD auto solvate and ionized based on boxsize
-離子濃度      :注意單位，如果輸入8，代表是8mol/L的NaCl
+離子濃度      :注意單位，如果輸入8，代表是8 g/L的NaCl
 盒子長度      :no default
 刪除中間檔案  :1刪除0不刪除，default 0
 
 Example：
 
-1. 建立由 1條GC 組成的模型，加入水 7500 顆，並且設定NaCl濃度為 8 mol/L，
+1. 建立由 1條GC 組成的模型，加入水 7500 顆，並且設定NaCl濃度為 8 g/L，
 設定盒子大小為 100A ，並且保留中間生成的檔案：
 > python model.py 0 0 1 0 7500 8 100 0
 

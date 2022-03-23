@@ -9,11 +9,10 @@ parser.add_argument("KEMA",   type=int,help="Number of KEMA set")
 parser.add_argument("GC",     type=int,help="Number of GC   polymer")
 parser.add_argument("GCMA",   type=int,help="Number of GCMA polymer")
 parser.add_argument("Water"  ,type=int,help="Number of Water molecule (-1 for VMD auto solvate + ionization)")
-parser.add_argument("Salt"   ,type=float,help="Add aaditional concentration of NaCl (0 for not adding any salt)")
+parser.add_argument("Salt"   ,type=float,help="Add additional concentration of NaCl (g/L) (0 for not adding any salt)")
 parser.add_argument("Boxsize",type=int,help="Initial box size")
 parser.add_argument("Delete" ,type=int,help="Delete working files or not (1 delete, 0 keep)", default = 0)
 args = parser.parse_args()
-
 
 def main(KE,KEMA,GC,GCMA,water,salt,boxsize,delete):
     print('Num of KE   set :',KE)
@@ -64,11 +63,11 @@ def main(KE,KEMA,GC,GCMA,water,salt,boxsize,delete):
     packmol(KE,KEMA,GC,GCMA,water,salt_num,boxsize,name,delete)
     print("\nPackmol finished")
     autopsf(KE,KEMA,GC,GCMA,water,salt,boxsize,name,delete)
-    print("\autopsf finished")
+    print("\nautopsf finished")
     charmm2lmp(KE,KEMA,GC,GCMA,boxsize,name,delete)
-    print("\charmm2lmp finished")
+    print("\ncharmm2lmp finished")
     createTWCC(KE,KEMA,GC,GCMA,name)
-    print("\createTWCC finished")
+    print("\ncreateTWCC finished")
 
 def createTWCC(KE,KEMA,GC,GCMA,name):
     twcc_dir = name + '/' +name
@@ -90,8 +89,8 @@ def createTWCC(KE,KEMA,GC,GCMA,name):
 
     with open(in_file,'w') as f :
         f.writelines("# Variable                                                                                                                              \n")
-        f.writelines("variable		npt_step	equal	1000000            # 1 ns                                                                            \n")
-        f.writelines("variable		npt_thermo	equal	${npt_step}/100    # output 100 frame                                                                 \n")
+        f.writelines("variable		nvt_step	equal	1000000            # 1 ns                                                                            \n")
+        f.writelines("variable		nvt_thermo	equal	${nvt_step}/100    # output 100 frame                                                                 \n")
         f.writelines("units           real                                                                                                                    \n")
         f.writelines("variable        filename    string  "+name+"_autopsf_solvate_ionzied.data\n")
         f.writelines("                                                                                                                                        \n")
@@ -102,9 +101,9 @@ def createTWCC(KE,KEMA,GC,GCMA,name):
         f.writelines("angle_style     charmm                                                                                                                  \n")
         f.writelines("dihedral_style  charmmfsw                                                                                                               \n")
         f.writelines("improper_style  harmonic                                                                                                                \n")
-        f.writelines("pair_style      lj/charmmfsw/coul/charmmfsh 10 12                                                                                     \n")
-        f.writelines("# pair_style      lj/charmmfsw/coul/long 10 12                                                                                            \n")
-        f.writelines("# kspace_style    pppm 1e-6                                                                                                               \n")
+        f.writelines("#pair_style      lj/charmmfsw/coul/charmmfsh 10 12                                                                                     \n")
+        f.writelines("pair_style      lj/charmmfsw/coul/long 10 12                                                                                            \n")
+        f.writelines("kspace_style    pppm 1e-6                                                                                                               \n")
         f.writelines("pair_modify     mix arithmetic                                                                                                          \n")
         f.writelines("                                                                                                                                        \n")
         f.writelines("# Modify following line to point to the desired CMAP file                                                                               \n")
@@ -125,16 +124,16 @@ def createTWCC(KE,KEMA,GC,GCMA,name):
         f.writelines("# Setup                                                                                                                                 \n")
         f.writelines("                                                                                                                                        \n")
         f.writelines("neigh_modify    delay 1 every 1                                                                                                         \n")
-        f.writelines("restart 		${npt_thermo} ./restart/300K_equilibrium.restart                                                                                       \n")
-        f.writelines("dump            1 all dcd ${npt_thermo} 300K_equilibrium.dcd                                                                                         \n")
+        f.writelines("restart 		${nvt_thermo} ./restart/300K_equilibrium.restart                                                                                       \n")
+        f.writelines("dump            1 all dcd ${nvt_thermo} 300K_equilibrium.dcd                                                                                         \n")
         f.writelines("dump_modify     1 unwrap yes                                                                                                            \n")
-        f.writelines("thermo          ${npt_thermo}                                                                                                           \n")
+        f.writelines("thermo          ${nvt_thermo}                                                                                                           \n")
         f.writelines("thermo_style    custom step time xlo xhi ylo yhi zlo zhi etotal pe ke ebond temp press eangle edihed eimp evdwl ecoul elong vol density \n")
         f.writelines("                                                                                                                                        \n")
         f.writelines("# NPT 300K                                                                                                                              \n")
         f.writelines("reset_timestep  0                                                                                                                       \n")
         f.writelines("\ntimestep        0.5                                                                                                                     \n")
-        f.writelines("run             ${npt_step}                                                                                                             \n")
+        f.writelines("run             ${nvt_step}                                                                                                             \n")
         f.writelines("                                                                                                                                        \n")
         f.writelines("write_data      300K_equilibrium.data pair ij                                                                                                    \n")
         f.writelines("write_dump      all custom 300K_equilibrium.dump id type x y z vx vy vz ix iy iz\n")
@@ -224,7 +223,7 @@ def createTWCC(KE,KEMA,GC,GCMA,name):
 
     with open(sh2_file,'w',encoding="utf-8") as f:
         f.writelines("#!/bin/bash\n")             
-        f.writelines("#PBS -l select=4:ncpus=40:mpiprocs=40:ompthreads=1\n")
+        f.writelines("#PBS -l select=1:ncpus=40:mpiprocs=40:ompthreads=1\n")
         out = "#PBS -N "+str(KE)+str(KEMA)+str(GC)+str(GCMA)+"_pro \n"
         f.writelines(out)
         f.writelines("#PBS -q ct160\n")
