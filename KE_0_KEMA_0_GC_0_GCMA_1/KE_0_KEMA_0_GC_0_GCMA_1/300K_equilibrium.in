@@ -2,7 +2,7 @@
 variable		npt_step	equal	50000000           # 50 ns                                                                            
 variable		npt_thermo	equal	${npt_step}/100    # output 100 frame                                                                 
 units           real                                                                                                                    
-variable        filename    string  KE_0_KEMA_0_GC_0_GCMA_1_autopsf_solvate_ionzied.data
+variable        filename    string  pure.data
                                                                                                                                         
 # Potential define                                                                                                                      
 newton          off                                                                                                                     
@@ -16,10 +16,8 @@ pair_style      lj/charmmfsw/coul/charmmfsh 10 12
 # kspace_style    pppm 1e-6                                                                                                               
 pair_modify     mix arithmetic                                                                                                          
                                                                                                                                         
-# Modify following line to point to the desired CMAP file                                                                               
-fix             cmap all cmap charmm36.cmap                                                                          
-fix_modify      cmap energy yes                                                                                                         
-read_data       ${filename} fix cmap crossterm CMAP                                                                                        
+# Modify following line to point to the desired CMAP file                                                                                                
+read_data       ${filename}                                                                                      
 
 special_bonds   charmm                                                                                                                  
                                                                                                                                         
@@ -43,7 +41,7 @@ thermo_style    custom step time xlo xhi ylo yhi zlo zhi etotal pe ke ebond temp
 # NPT 300K                                                                                                                              
 reset_timestep  0                                                                                                                       
 
-timestep        0.5                                                                                                                     
+timestep        1                                                                                                                     
 run             ${npt_step}                                                                                                             
                                                                                                                                         
 write_data      300K_equilibrium.data pair ij                                                                                                    

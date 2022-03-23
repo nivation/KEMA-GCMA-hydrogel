@@ -1,0 +1,1388 @@
+Info) VMD for WIN32, version 1.9.3 (November 30, 2016)
+Info) http://www.ks.uiuc.edu/Research/vmd/                         
+Info) Email questions and bug reports to vmd@ks.uiuc.edu           
+Info) Please include this reference in published work using VMD:   
+Info)    Humphrey, W., Dalke, A. and Schulten, K., `VMD - Visual   
+Info)    Molecular Dynamics', J. Molec. Graphics 1996, 14.1, 33-38.
+Info) -------------------------------------------------------------
+Info) Multithreading available, 8 CPUs detected.
+Info) Free system memory: 4095MB (100%)
+Info) Creating CUDA device pool and initializing hardware...
+Info) Detected 1 available CUDA accelerator:
+Info) [0] GeForce MX350       5 SM_6.1 @ 0.94 GHz, 2.0GB RAM, KTO, AE5, ZCP
+Info) No joysticks found.  Joystick interface disabled.
+Info) Dynamically loaded 75 plugins in directory:
+Info) C:/Program Files (x86)/University of Illinois/VMD/plugins/WIN32/molfile
+1.6.4
+1.7
+1.4
+psfgen) clearing structure, preserving topology and aliases
+psfgen) reading topology file top_all36m_prot.rtf
+
+psfgen) >>>>>>>>CHARMM36 All-Hydrogen Topology File for Proteins <<<<<<
+psfgen) >>>>> Includes phi, psi cross term map (CMAP) correction <<<<<<<
+psfgen) >>>>>>>>>>>>>>>>>>>>>>>>>> May 2011 <<<<<<<<<<<<<<<<<<<<<<<<<<<<
+psfgen)  All comments to the CHARMM web site: www.charmm.org
+psfgen)              parameter set discussion forum
+psfgen) 
+psfgen) Created by CHARMM version 36 1
+psfgen) cross-term entries present in topology definitions
+Info) Using plugin pdb for structure file KE_0_KEMA_0_GC_5_GCMA_0/KE_0_KEMA_0_GC_5_GCMA_0.pdb
+Info) Using plugin pdb for coordinates from file KE_0_KEMA_0_GC_5_GCMA_0/KE_0_KEMA_0_GC_5_GCMA_0.pdb
+Info) Determining bond structure from distance search ...
+Info) Analyzing structure ...
+Info)    Atoms: 3590
+Info)    Bonds: 5630
+Info)    Angles: 0  Dihedrals: 0  Impropers: 0  Cross-terms: 0
+Info)    Bondtypes: 0  Angletypes: 0  Dihedraltypes: 0  Impropertypes: 0
+Info)    Residues: 100
+Info)    Waters: 0
+Info)    Segments: 1
+Info)    Fragments: 5   Protein: 0   Nucleic: 0
+Info) Finished with coordinate file KE_0_KEMA_0_GC_5_GCMA_0/KE_0_KEMA_0_GC_5_GCMA_0.pdb.
+0
+atomselect0
+0 1 2 3 4
+0
+Info) Opened coordinate file 0.pdb for writing.
+Info) Finished with coordinate file 0.pdb.
+psfgen) building segment 0
+psfgen) reading residues from pdb file 0.pdb
+psfgen) extracted 20 residues from pdb file
+psfgen) Info: generating structure...psfgen) Info: skipping bond C3-O1 at end of segment.
+segment complete.
+psfgen) reading coordinates from pdb file 0.pdb for segment 0
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:2	  0
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:2	  0
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:2	  0
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:2	  0
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:2	  0
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:2	  0
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:2	  0
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:2	  0
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:2	  0
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:2	  0
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:3	  0
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:3	  0
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:3	  0
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:3	  0
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:3	  0
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:3	  0
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:3	  0
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:3	  0
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:3	  0
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:3	  0
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:5	  0
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:5	  0
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:5	  0
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:5	  0
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:5	  0
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:5	  0
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:5	  0
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:5	  0
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:5	  0
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:5	  0
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:6	  0
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:6	  0
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:6	  0
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:6	  0
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:6	  0
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:6	  0
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:6	  0
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:6	  0
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:6	  0
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:6	  0
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:7	  0
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:7	  0
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:7	  0
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:7	  0
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:7	  0
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:7	  0
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:7	  0
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:7	  0
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:7	  0
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:7	  0
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:8	  0
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:8	  0
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:8	  0
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:8	  0
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:8	  0
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:8	  0
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:8	  0
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:8	  0
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:8	  0
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:8	  0
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:10	  0
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:10	  0
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:10	  0
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:10	  0
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:10	  0
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:10	  0
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:10	  0
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:10	  0
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:10	  0
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:10	  0
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:11	  0
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:11	  0
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:11	  0
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:11	  0
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:11	  0
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:11	  0
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:11	  0
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:11	  0
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:11	  0
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:11	  0
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:12	  0
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:12	  0
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:12	  0
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:12	  0
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:12	  0
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:12	  0
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:12	  0
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:12	  0
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:12	  0
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:12	  0
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:13	  0
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:13	  0
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:13	  0
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:13	  0
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:13	  0
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:13	  0
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:13	  0
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:13	  0
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:13	  0
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:13	  0
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:15	  0
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:15	  0
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:15	  0
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:15	  0
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:15	  0
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:15	  0
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:15	  0
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:15	  0
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:15	  0
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:15	  0
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:16	  0
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:16	  0
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:16	  0
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:16	  0
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:16	  0
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:16	  0
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:16	  0
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:16	  0
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:16	  0
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:16	  0
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:17	  0
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:17	  0
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:17	  0
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:17	  0
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:17	  0
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:17	  0
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:17	  0
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:17	  0
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:17	  0
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:17	  0
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:18	  0
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:18	  0
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:18	  0
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:18	  0
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:18	  0
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:18	  0
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:18	  0
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:18	  0
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:18	  0
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:18	  0
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:20	  0
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:20	  0
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:20	  0
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:20	  0
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:20	  0
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:20	  0
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:20	  0
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:20	  0
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:20	  0
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:20	  0
+psfgen) Info: guessing coordinates for 15 atoms (0 non-hydrogen)
+psfgen) Warning: poorly guessed coordinates for 15 atoms (0 non-hydrogen):
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:2	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:3	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:5	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:6	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:7	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:8	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:10	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:11	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:12	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:13	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:15	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:16	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:17	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:18	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:20	  0
+psfgen) regenerating all angles
+psfgen) regenerating all dihedrals
+1
+Info) Opened coordinate file 1.pdb for writing.
+Info) Finished with coordinate file 1.pdb.
+psfgen) building segment 1
+psfgen) reading residues from pdb file 1.pdb
+psfgen) extracted 20 residues from pdb file
+psfgen) Info: generating structure...psfgen) Info: skipping bond C3-O1 at end of segment.
+segment complete.
+psfgen) reading coordinates from pdb file 1.pdb for segment 1
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:2	  1
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:2	  1
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:2	  1
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:2	  1
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:2	  1
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:2	  1
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:2	  1
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:2	  1
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:2	  1
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:2	  1
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:3	  1
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:3	  1
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:3	  1
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:3	  1
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:3	  1
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:3	  1
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:3	  1
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:3	  1
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:3	  1
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:3	  1
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:5	  1
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:5	  1
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:5	  1
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:5	  1
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:5	  1
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:5	  1
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:5	  1
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:5	  1
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:5	  1
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:5	  1
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:6	  1
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:6	  1
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:6	  1
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:6	  1
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:6	  1
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:6	  1
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:6	  1
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:6	  1
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:6	  1
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:6	  1
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:7	  1
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:7	  1
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:7	  1
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:7	  1
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:7	  1
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:7	  1
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:7	  1
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:7	  1
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:7	  1
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:7	  1
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:8	  1
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:8	  1
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:8	  1
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:8	  1
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:8	  1
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:8	  1
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:8	  1
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:8	  1
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:8	  1
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:8	  1
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:10	  1
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:10	  1
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:10	  1
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:10	  1
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:10	  1
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:10	  1
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:10	  1
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:10	  1
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:10	  1
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:10	  1
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:11	  1
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:11	  1
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:11	  1
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:11	  1
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:11	  1
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:11	  1
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:11	  1
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:11	  1
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:11	  1
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:11	  1
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:12	  1
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:12	  1
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:12	  1
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:12	  1
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:12	  1
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:12	  1
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:12	  1
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:12	  1
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:12	  1
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:12	  1
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:13	  1
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:13	  1
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:13	  1
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:13	  1
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:13	  1
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:13	  1
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:13	  1
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:13	  1
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:13	  1
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:13	  1
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:15	  1
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:15	  1
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:15	  1
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:15	  1
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:15	  1
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:15	  1
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:15	  1
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:15	  1
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:15	  1
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:15	  1
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:16	  1
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:16	  1
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:16	  1
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:16	  1
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:16	  1
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:16	  1
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:16	  1
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:16	  1
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:16	  1
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:16	  1
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:17	  1
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:17	  1
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:17	  1
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:17	  1
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:17	  1
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:17	  1
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:17	  1
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:17	  1
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:17	  1
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:17	  1
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:18	  1
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:18	  1
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:18	  1
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:18	  1
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:18	  1
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:18	  1
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:18	  1
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:18	  1
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:18	  1
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:18	  1
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:20	  1
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:20	  1
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:20	  1
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:20	  1
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:20	  1
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:20	  1
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:20	  1
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:20	  1
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:20	  1
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:20	  1
+psfgen) Info: guessing coordinates for 30 atoms (0 non-hydrogen)
+psfgen) Warning: poorly guessed coordinates for 30 atoms (0 non-hydrogen):
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:2	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:3	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:5	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:6	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:7	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:8	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:10	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:11	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:12	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:13	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:15	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:16	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:17	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:18	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:20	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:2	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:3	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:5	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:6	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:7	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:8	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:10	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:11	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:12	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:13	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:15	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:16	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:17	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:18	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:20	  1
+psfgen) regenerating all angles
+psfgen) regenerating all dihedrals
+2
+Info) Opened coordinate file 2.pdb for writing.
+Info) Finished with coordinate file 2.pdb.
+psfgen) building segment 2
+psfgen) reading residues from pdb file 2.pdb
+psfgen) extracted 20 residues from pdb file
+psfgen) Info: generating structure...psfgen) Info: skipping bond C3-O1 at end of segment.
+segment complete.
+psfgen) reading coordinates from pdb file 2.pdb for segment 2
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:2	  2
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:2	  2
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:2	  2
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:2	  2
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:2	  2
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:2	  2
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:2	  2
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:2	  2
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:2	  2
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:2	  2
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:3	  2
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:3	  2
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:3	  2
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:3	  2
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:3	  2
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:3	  2
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:3	  2
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:3	  2
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:3	  2
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:3	  2
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:5	  2
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:5	  2
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:5	  2
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:5	  2
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:5	  2
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:5	  2
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:5	  2
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:5	  2
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:5	  2
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:5	  2
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:6	  2
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:6	  2
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:6	  2
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:6	  2
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:6	  2
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:6	  2
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:6	  2
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:6	  2
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:6	  2
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:6	  2
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:7	  2
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:7	  2
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:7	  2
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:7	  2
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:7	  2
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:7	  2
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:7	  2
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:7	  2
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:7	  2
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:7	  2
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:8	  2
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:8	  2
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:8	  2
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:8	  2
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:8	  2
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:8	  2
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:8	  2
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:8	  2
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:8	  2
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:8	  2
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:10	  2
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:10	  2
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:10	  2
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:10	  2
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:10	  2
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:10	  2
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:10	  2
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:10	  2
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:10	  2
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:10	  2
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:11	  2
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:11	  2
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:11	  2
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:11	  2
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:11	  2
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:11	  2
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:11	  2
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:11	  2
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:11	  2
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:11	  2
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:12	  2
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:12	  2
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:12	  2
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:12	  2
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:12	  2
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:12	  2
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:12	  2
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:12	  2
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:12	  2
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:12	  2
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:13	  2
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:13	  2
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:13	  2
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:13	  2
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:13	  2
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:13	  2
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:13	  2
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:13	  2
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:13	  2
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:13	  2
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:15	  2
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:15	  2
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:15	  2
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:15	  2
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:15	  2
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:15	  2
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:15	  2
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:15	  2
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:15	  2
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:15	  2
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:16	  2
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:16	  2
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:16	  2
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:16	  2
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:16	  2
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:16	  2
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:16	  2
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:16	  2
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:16	  2
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:16	  2
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:17	  2
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:17	  2
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:17	  2
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:17	  2
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:17	  2
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:17	  2
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:17	  2
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:17	  2
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:17	  2
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:17	  2
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:18	  2
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:18	  2
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:18	  2
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:18	  2
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:18	  2
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:18	  2
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:18	  2
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:18	  2
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:18	  2
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:18	  2
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:20	  2
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:20	  2
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:20	  2
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:20	  2
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:20	  2
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:20	  2
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:20	  2
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:20	  2
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:20	  2
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:20	  2
+psfgen) Info: guessing coordinates for 45 atoms (0 non-hydrogen)
+psfgen) Warning: poorly guessed coordinates for 45 atoms (0 non-hydrogen):
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:2	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:3	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:5	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:6	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:7	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:8	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:10	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:11	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:12	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:13	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:15	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:16	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:17	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:18	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:20	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:2	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:3	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:5	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:6	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:7	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:8	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:10	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:11	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:12	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:13	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:15	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:16	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:17	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:18	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:20	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:2	  2
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:3	  2
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:5	  2
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:6	  2
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:7	  2
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:8	  2
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:10	  2
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:11	  2
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:12	  2
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:13	  2
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:15	  2
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:16	  2
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:17	  2
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:18	  2
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:20	  2
+psfgen) regenerating all angles
+psfgen) regenerating all dihedrals
+3
+Info) Opened coordinate file 3.pdb for writing.
+Info) Finished with coordinate file 3.pdb.
+psfgen) building segment 3
+psfgen) reading residues from pdb file 3.pdb
+psfgen) extracted 20 residues from pdb file
+psfgen) Info: generating structure...psfgen) Info: skipping bond C3-O1 at end of segment.
+segment complete.
+psfgen) reading coordinates from pdb file 3.pdb for segment 3
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:2	  3
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:2	  3
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:2	  3
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:2	  3
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:2	  3
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:2	  3
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:2	  3
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:2	  3
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:2	  3
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:2	  3
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:3	  3
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:3	  3
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:3	  3
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:3	  3
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:3	  3
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:3	  3
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:3	  3
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:3	  3
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:3	  3
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:3	  3
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:5	  3
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:5	  3
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:5	  3
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:5	  3
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:5	  3
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:5	  3
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:5	  3
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:5	  3
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:5	  3
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:5	  3
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:6	  3
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:6	  3
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:6	  3
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:6	  3
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:6	  3
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:6	  3
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:6	  3
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:6	  3
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:6	  3
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:6	  3
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:7	  3
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:7	  3
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:7	  3
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:7	  3
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:7	  3
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:7	  3
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:7	  3
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:7	  3
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:7	  3
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:7	  3
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:8	  3
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:8	  3
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:8	  3
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:8	  3
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:8	  3
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:8	  3
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:8	  3
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:8	  3
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:8	  3
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:8	  3
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:10	  3
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:10	  3
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:10	  3
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:10	  3
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:10	  3
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:10	  3
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:10	  3
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:10	  3
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:10	  3
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:10	  3
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:11	  3
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:11	  3
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:11	  3
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:11	  3
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:11	  3
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:11	  3
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:11	  3
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:11	  3
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:11	  3
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:11	  3
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:12	  3
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:12	  3
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:12	  3
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:12	  3
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:12	  3
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:12	  3
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:12	  3
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:12	  3
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:12	  3
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:12	  3
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:13	  3
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:13	  3
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:13	  3
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:13	  3
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:13	  3
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:13	  3
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:13	  3
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:13	  3
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:13	  3
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:13	  3
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:15	  3
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:15	  3
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:15	  3
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:15	  3
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:15	  3
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:15	  3
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:15	  3
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:15	  3
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:15	  3
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:15	  3
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:16	  3
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:16	  3
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:16	  3
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:16	  3
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:16	  3
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:16	  3
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:16	  3
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:16	  3
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:16	  3
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:16	  3
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:17	  3
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:17	  3
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:17	  3
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:17	  3
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:17	  3
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:17	  3
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:17	  3
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:17	  3
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:17	  3
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:17	  3
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:18	  3
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:18	  3
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:18	  3
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:18	  3
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:18	  3
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:18	  3
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:18	  3
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:18	  3
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:18	  3
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:18	  3
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:20	  3
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:20	  3
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:20	  3
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:20	  3
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:20	  3
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:20	  3
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:20	  3
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:20	  3
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:20	  3
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:20	  3
+psfgen) Info: guessing coordinates for 60 atoms (0 non-hydrogen)
+psfgen) Warning: poorly guessed coordinates for 60 atoms (0 non-hydrogen):
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:2	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:3	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:5	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:6	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:7	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:8	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:10	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:11	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:12	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:13	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:15	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:16	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:17	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:18	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:20	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:2	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:3	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:5	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:6	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:7	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:8	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:10	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:11	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:12	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:13	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:15	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:16	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:17	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:18	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:20	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:2	  2
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:3	  2
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:5	  2
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:6	  2
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:7	  2
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:8	  2
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:10	  2
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:11	  2
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:12	  2
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:13	  2
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:15	  2
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:16	  2
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:17	  2
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:18	  2
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:20	  2
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:2	  3
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:3	  3
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:5	  3
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:6	  3
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:7	  3
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:8	  3
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:10	  3
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:11	  3
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:12	  3
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:13	  3
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:15	  3
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:16	  3
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:17	  3
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:18	  3
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:20	  3
+psfgen) regenerating all angles
+psfgen) regenerating all dihedrals
+4
+Info) Opened coordinate file 4.pdb for writing.
+Info) Finished with coordinate file 4.pdb.
+psfgen) building segment 4
+psfgen) reading residues from pdb file 4.pdb
+psfgen) extracted 20 residues from pdb file
+psfgen) Info: generating structure...psfgen) Info: skipping bond C3-O1 at end of segment.
+segment complete.
+psfgen) reading coordinates from pdb file 4.pdb for segment 4
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:2	  4
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:2	  4
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:2	  4
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:2	  4
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:2	  4
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:2	  4
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:2	  4
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:2	  4
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:2	  4
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:2	  4
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:3	  4
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:3	  4
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:3	  4
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:3	  4
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:3	  4
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:3	  4
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:3	  4
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:3	  4
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:3	  4
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:3	  4
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:5	  4
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:5	  4
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:5	  4
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:5	  4
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:5	  4
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:5	  4
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:5	  4
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:5	  4
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:5	  4
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:5	  4
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:6	  4
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:6	  4
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:6	  4
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:6	  4
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:6	  4
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:6	  4
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:6	  4
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:6	  4
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:6	  4
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:6	  4
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:7	  4
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:7	  4
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:7	  4
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:7	  4
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:7	  4
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:7	  4
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:7	  4
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:7	  4
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:7	  4
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:7	  4
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:8	  4
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:8	  4
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:8	  4
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:8	  4
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:8	  4
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:8	  4
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:8	  4
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:8	  4
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:8	  4
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:8	  4
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:10	  4
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:10	  4
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:10	  4
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:10	  4
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:10	  4
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:10	  4
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:10	  4
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:10	  4
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:10	  4
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:10	  4
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:11	  4
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:11	  4
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:11	  4
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:11	  4
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:11	  4
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:11	  4
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:11	  4
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:11	  4
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:11	  4
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:11	  4
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:12	  4
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:12	  4
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:12	  4
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:12	  4
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:12	  4
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:12	  4
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:12	  4
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:12	  4
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:12	  4
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:12	  4
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:13	  4
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:13	  4
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:13	  4
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:13	  4
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:13	  4
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:13	  4
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:13	  4
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:13	  4
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:13	  4
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:13	  4
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:15	  4
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:15	  4
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:15	  4
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:15	  4
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:15	  4
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:15	  4
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:15	  4
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:15	  4
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:15	  4
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:15	  4
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:16	  4
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:16	  4
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:16	  4
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:16	  4
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:16	  4
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:16	  4
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:16	  4
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:16	  4
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:16	  4
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:16	  4
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:17	  4
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:17	  4
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:17	  4
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:17	  4
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:17	  4
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:17	  4
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:17	  4
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:17	  4
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:17	  4
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:17	  4
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:18	  4
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:18	  4
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:18	  4
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:18	  4
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:18	  4
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:18	  4
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:18	  4
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:18	  4
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:18	  4
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:18	  4
+psfgen) Warning: failed to set coordinate for atom C15	 HSE:20	  4
+psfgen) Warning: failed to set coordinate for atom C16	 HSE:20	  4
+psfgen) Warning: failed to set coordinate for atom C18	 HSE:20	  4
+psfgen) Warning: failed to set coordinate for atom H110	 HSE:20	  4
+psfgen) Warning: failed to set coordinate for atom H111	 HSE:20	  4
+psfgen) Warning: failed to set coordinate for atom H112	 HSE:20	  4
+psfgen) Warning: failed to set coordinate for atom O13	 HSE:20	  4
+psfgen) Warning: failed to set coordinate for atom C17	 HSE:20	  4
+psfgen) Warning: failed to set coordinate for atom H18	 HSE:20	  4
+psfgen) Warning: failed to set coordinate for atom H19	 HSE:20	  4
+psfgen) Info: guessing coordinates for 75 atoms (0 non-hydrogen)
+psfgen) Warning: poorly guessed coordinates for 75 atoms (0 non-hydrogen):
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:2	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:3	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:5	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:6	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:7	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:8	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:10	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:11	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:12	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:13	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:15	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:16	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:17	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:18	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:20	  0
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:2	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:3	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:5	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:6	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:7	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:8	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:10	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:11	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:12	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:13	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:15	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:16	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:17	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:18	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:20	  1
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:2	  2
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:3	  2
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:5	  2
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:6	  2
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:7	  2
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:8	  2
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:10	  2
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:11	  2
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:12	  2
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:13	  2
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:15	  2
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:16	  2
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:17	  2
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:18	  2
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:20	  2
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:2	  3
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:3	  3
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:5	  3
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:6	  3
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:7	  3
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:8	  3
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:10	  3
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:11	  3
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:12	  3
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:13	  3
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:15	  3
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:16	  3
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:17	  3
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:18	  3
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:20	  3
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:2	  4
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:3	  4
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:5	  4
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:6	  4
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:7	  4
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:8	  4
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:10	  4
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:11	  4
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:12	  4
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:13	  4
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:15	  4
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:16	  4
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:17	  4
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:18	  4
+psfgen) Warning: poorly guessed coordinate for atom H2	 HSE:20	  4
+psfgen) regenerating all angles
+psfgen) regenerating all dihedrals
+psfgen) Info: writing pdb file KE_0_KEMA_0_GC_5_GCMA_0/KE_0_KEMA_0_GC_5_GCMA_0_autopsf.pdb
+psfgen) Info: Atoms with guessed coordinates will have occupancy of 0.0.
+psfgen) Info: pdb file complete.
+psfgen) Info: writing psf file KE_0_KEMA_0_GC_5_GCMA_0/KE_0_KEMA_0_GC_5_GCMA_0_autopsf.psf
+psfgen) total of 2915 atoms
+psfgen) total of 3010 bonds
+psfgen) total of 5605 angles
+psfgen) total of 8400 dihedrals
+psfgen) total of 0 impropers
+psfgen) total of 0 explicit exclusions
+psfgen) Structure requires EXTended PSF format
+psfgen) total of 0 cross-terms
+psfgen) Info: psf file complete.
+psfgen) clearing structure, preserving topology and aliases
+Info) generating solute plus one replica of water...
+psfgen) reading structure from psf file KE_0_KEMA_0_GC_5_GCMA_0/KE_0_KEMA_0_GC_5_GCMA_0_autopsf.psf
+psfgen) psf file does not contain cross-terms
+psfgen) reading coordinates from pdb file KE_0_KEMA_0_GC_5_GCMA_0/KE_0_KEMA_0_GC_5_GCMA_0_autopsf.pdb
+psfgen) reading structure from psf file C:/Program Files (x86)/University of Illinois/VMD/plugins/noarch/tcl/solvate1.7/wat.psf
+psfgen) psf file does not contain cross-terms
+psfgen) reading coordinates from pdb file C:/Program Files (x86)/University of Illinois/VMD/plugins/noarch/tcl/solvate1.7/wat.pdb
+psfgen) Info: writing psf file combine.psf
+psfgen) total of 30698 atoms
+psfgen) total of 21532 bonds
+psfgen) total of 24127 angles
+psfgen) total of 8400 dihedrals
+psfgen) total of 0 impropers
+psfgen) total of 0 explicit exclusions
+psfgen) Structure requires EXTended PSF format
+psfgen) total of 0 cross-terms
+psfgen) Info: psf file complete.
+psfgen) Info: writing pdb file combine.pdb
+psfgen) Info: pdb file complete.
+Info) Using plugin psf for structure file combine.psf
+Info) Analyzing structure ...
+Info)    Atoms: 30698
+Info)    Bonds: 21532
+Info)    Angles: 24127  Dihedrals: 8400  Impropers: 0  Cross-terms: 0
+Info)    Bondtypes: 0  Angletypes: 0  Dihedraltypes: 0  Impropertypes: 0
+Info)    Residues: 9361
+Info)    Waters: 9261
+Info)    Segments: 6
+Info)    Fragments: 9266   Protein: 0   Nucleic: 0
+Info) Using plugin pdb for coordinates from file combine.pdb
+Info) Finished with coordinate file combine.pdb.
+Info) generating water residue lists...
+Info) single water residue type, creating residue list...
+Info) replicating 8 water segments, 2 by 2 by 2
+psfgen) reading topology file C:/Program Files (x86)/University of Illinois/VMD/plugins/noarch/tcl/solvate1.7/wat.top
+
+psfgen) >>>>>> Combined CHARMM All-Hydrogen Topology File for <<<<<<<<<
+psfgen) >>>>>>>>> CHARMM22 Proteins and CHARMM27 Lipids <<<<<<<<<<
+psfgen) from
+psfgen) >>>>>>>>CHARMM22 All-Hydrogen Topology File for Proteins <<<<<<
+psfgen) >>>>>>>>>>>>>>>>>>>>> August 1999 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+psfgen) >>>>>>> Direct comments to Alexander D. MacKerell Jr. <<<<<<<<<
+psfgen) >>>>>> 410-706-7442 or email: alex,mmiris.ab.umd.edu  <<<<<<<<<
+psfgen) and
+psfgen)   \\\\\\\ CHARMM27 All-Hydrogen Lipid Topology File ///////
+psfgen)   \\\\\\\\\\\\\\\\\\ Developmental /////////////////////////
+psfgen) 		Alexander D. MacKerell Jr.
+psfgen) 			August 1999
+psfgen)  All comments to ADM jr.  email: alex,mmiris.ab.umd.edu
+psfgen) 		telephone: 410-706-7442
+psfgen) 
+psfgen) Created by CHARMM version 27 1
+psfgen) building segment WT1
+psfgen) setting patch for first residue to NONE
+psfgen) setting patch for last residue to NONE
+psfgen) Info: generating structure...segment complete.
+psfgen) building segment WT2
+psfgen) setting patch for first residue to NONE
+psfgen) setting patch for last residue to NONE
+psfgen) Info: generating structure...segment complete.
+psfgen) building segment WT3
+psfgen) setting patch for first residue to NONE
+psfgen) setting patch for last residue to NONE
+psfgen) Info: generating structure...segment complete.
+psfgen) building segment WT4
+psfgen) setting patch for first residue to NONE
+psfgen) setting patch for last residue to NONE
+psfgen) Info: generating structure...segment complete.
+psfgen) building segment WT5
+psfgen) setting patch for first residue to NONE
+psfgen) setting patch for last residue to NONE
+psfgen) Info: generating structure...segment complete.
+psfgen) building segment WT6
+psfgen) setting patch for first residue to NONE
+psfgen) setting patch for last residue to NONE
+psfgen) Info: generating structure...segment complete.
+psfgen) building segment WT7
+psfgen) setting patch for first residue to NONE
+psfgen) setting patch for last residue to NONE
+psfgen) Info: generating structure...segment complete.
+psfgen) building segment WT8
+psfgen) setting patch for first residue to NONE
+psfgen) setting patch for last residue to NONE
+psfgen) Info: generating structure...segment complete.
+psfgen) Info: writing psf file KE_0_KEMA_0_GC_5_GCMA_0/KE_0_KEMA_0_GC_5_GCMA_0_autopsf_solvate.psf
+psfgen) total of 114305 atoms
+psfgen) total of 77270 bonds
+psfgen) total of 42735 angles
+psfgen) total of 8400 dihedrals
+psfgen) total of 0 impropers
+psfgen) total of 0 explicit exclusions
+psfgen) Structure requires EXTended PSF format
+psfgen) total of 0 cross-terms
+psfgen) Info: psf file complete.
+psfgen) Info: writing pdb file KE_0_KEMA_0_GC_5_GCMA_0/KE_0_KEMA_0_GC_5_GCMA_0_autopsf_solvate.pdb
+psfgen) Info: pdb file complete.
+psfgen) clearing structure, preserving topology and aliases
+Info) Using plugin psf for structure file KE_0_KEMA_0_GC_5_GCMA_0/KE_0_KEMA_0_GC_5_GCMA_0_autopsf_solvate.psf
+Info) Analyzing structure ...
+Info)    Atoms: 114305
+Info)    Bonds: 77270
+Info)    Angles: 42735  Dihedrals: 8400  Impropers: 0  Cross-terms: 0
+Info)    Bondtypes: 0  Angletypes: 0  Dihedraltypes: 0  Impropertypes: 0
+Info)    Residues: 37230
+Info)    Waters: 37130
+Info)    Segments: 13
+Info)    Fragments: 37135   Protein: 0   Nucleic: 0
+Info) Using plugin pdb for coordinates from file KE_0_KEMA_0_GC_5_GCMA_0/KE_0_KEMA_0_GC_5_GCMA_0_autopsf_solvate.pdb
+Info) Finished with coordinate file KE_0_KEMA_0_GC_5_GCMA_0/KE_0_KEMA_0_GC_5_GCMA_0_autopsf_solvate.pdb.
+Info) Opened coordinate file KE_0_KEMA_0_GC_5_GCMA_0/KE_0_KEMA_0_GC_5_GCMA_0_autopsf_solvate.pdb for writing.
+Info) Finished with coordinate file KE_0_KEMA_0_GC_5_GCMA_0/KE_0_KEMA_0_GC_5_GCMA_0_autopsf_solvate.pdb.
+Info) Extra structure overlap safety check...
+Info) Solvate completed successfully.
+Autoionize) Reading KE_0_KEMA_0_GC_5_GCMA_0/KE_0_KEMA_0_GC_5_GCMA_0_autopsf_solvate.psf/KE_0_KEMA_0_GC_5_GCMA_0/KE_0_KEMA_0_GC_5_GCMA_0_autopsf_solvate.pdb...
+psfgen) clearing structure, preserving topology and aliases
+psfgen) reading structure from psf file KE_0_KEMA_0_GC_5_GCMA_0/KE_0_KEMA_0_GC_5_GCMA_0_autopsf_solvate.psf
+psfgen) psf file does not contain cross-terms
+psfgen) reading coordinates from pdb file KE_0_KEMA_0_GC_5_GCMA_0/KE_0_KEMA_0_GC_5_GCMA_0_autopsf_solvate.pdb
+Info) Using plugin psf for structure file KE_0_KEMA_0_GC_5_GCMA_0/KE_0_KEMA_0_GC_5_GCMA_0_autopsf_solvate.psf
+Info) Analyzing structure ...
+Info)    Atoms: 114305
+Info)    Bonds: 77270
+Info)    Angles: 42735  Dihedrals: 8400  Impropers: 0  Cross-terms: 0
+Info)    Bondtypes: 0  Angletypes: 0  Dihedraltypes: 0  Impropertypes: 0
+Info)    Residues: 37230
+Info)    Waters: 37130
+Info)    Segments: 13
+Info)    Fragments: 37135   Protein: 0   Nucleic: 0
+Info) Using plugin pdb for coordinates from file KE_0_KEMA_0_GC_5_GCMA_0/KE_0_KEMA_0_GC_5_GCMA_0_autopsf_solvate.pdb
+Info) Finished with coordinate file KE_0_KEMA_0_GC_5_GCMA_0/KE_0_KEMA_0_GC_5_GCMA_0_autopsf_solvate.pdb.
+Autoionize) System net charge before adding ions: 1.3224780559539795e-6e.
+Autoionize) Number of ions required for neutralizing the system: 0 SOD and 0 CLA.
+Autoionize) Desired salt concentration: 0.15 mol/L.
+Autoionize) Ions to be placed:
+Autoionize)   104 SOD
+Autoionize)   104 CLA
+Autoionize) Required min distance from molecule: 5A.
+Autoionize) Required min distance between ions: 5A.
+Autoionize) Output file prefix 'KE_0_KEMA_0_GC_5_GCMA_0/KE_0_KEMA_0_GC_5_GCMA_0_autopsf_solvate_ionzied'.
+Autoionize) Ions will be added to segname ION.
+Autoionize) Obtained positions for 208 ions.
+Autoionize) Tagged 208 water molecules for deletion.
+Autoionize) Deleted 208 water molecules.
+Autoionize) Reading CHARMM topology file...
+psfgen) reading topology file C:/Program Files (x86)/University of Illinois/VMD/plugins/noarch/tcl/readcharmmtop1.2/toppar_water_ions_namd.str
+
+psfgen)  Toplogy and parameter information for water and ions.
+psfgen) 
+psfgen) reading topology from stream file
+psfgen)  Topology for water and ions
+psfgen) 
+psfgen) 31  1
+psfgen)  Parameters for water and ions
+psfgen) 
+psfgen) ERROR!  Failed to parse atom statement.  Line 152: ATOMS
+
+psfgen) duplicate type key HT
+psfgen) duplicate type key HX
+psfgen) duplicate type key OT
+psfgen) duplicate type key OX
+psfgen) duplicate type key LIT
+psfgen) duplicate type key SOD
+psfgen) duplicate type key MG
+psfgen) duplicate type key POT
+psfgen) duplicate type key CAL
+psfgen) duplicate type key RUB
+psfgen) duplicate type key CES
+psfgen) duplicate type key BAR
+psfgen) duplicate type key ZN
+psfgen) duplicate type key CAD
+psfgen) duplicate type key CLA
+psfgen) ERROR!  Failed to parse bond statement.  Line 169: BONDS
+
+psfgen) ERROR!  FAILED TO RECOGNIZE HT.  Line 178: HT    HT      0.0       1.5139  ! from TIPS3P geometry (for SHAKE w/PARAM)
+
+psfgen) ERROR!  FAILED TO RECOGNIZE HT.  Line 179: HT    OT    450.0       0.9572  ! from TIPS3P geometry
+
+psfgen) ERROR!  FAILED TO RECOGNIZE OX.  Line 180: OX    HX    545.0       0.9700  ! hydroxide ion
+
+psfgen) ERROR!  Failed to parse angle statement.  Line 182: ANGLES
+
+psfgen) ERROR!  FAILED TO RECOGNIZE HT.  Line 195: HT   OT   HT     55.0      104.52   ! FROM TIPS3P GEOMETRY
+
+psfgen) ERROR!  Failed to parse dihedral statement.  Line 197: DIHEDRALS
+
+psfgen) ERROR!  Failed to parse improper statement.  Line 210: IMPROPER
+
+psfgen) ERROR!  FAILED TO RECOGNIZE NONBONDED.  Line 221: NONBONDED nbxmod  5 atom cdiel shift vatom vdistance vswitch -
+
+psfgen) ERROR!  FAILED TO RECOGNIZE CUTNB.  Line 222: cutnb 14.0 ctofnb 12.0 ctonnb 10.0 eps 1.0 e14fac 1.0 wmin 1.5
+
+psfgen) ERROR!  FAILED TO RECOGNIZE HT.  Line 225: HT       0.0       -0.046     0.2245
+
+psfgen) ERROR!  FAILED TO RECOGNIZE OT.  Line 226: OT       0.0       -0.1521    1.7682
+
+psfgen) ERROR!  FAILED TO RECOGNIZE OX.  Line 229: OX     0.000000  -0.120000     1.700000 ! ALLOW   POL ION
+
+psfgen) ERROR!  FAILED TO RECOGNIZE HX.  Line 231: HX     0.000000  -0.046000     0.224500 ! ALLOW PEP POL SUL ARO ALC
+
+psfgen) ERROR!  FAILED TO RECOGNIZE LIT.  Line 235: LIT      0.0      -0.00233       1.2975  ! Lithium
+
+psfgen) ERROR!  FAILED TO RECOGNIZE SOD.  Line 237: SOD      0.0       -0.0469    1.41075  ! new CHARMM Sodium 
+
+psfgen) ERROR!  FAILED TO RECOGNIZE MG.  Line 239: MG       0.0       -0.0150    1.18500   ! Magnesium
+
+psfgen) ERROR!  FAILED TO RECOGNIZE POT.  Line 241: POT      0.0       -0.0870    1.76375   ! Potassium
+
+psfgen) ERROR!  FAILED TO RECOGNIZE CAL.  Line 243: CAL      0.0       -0.120      1.367    ! Calcium
+
+psfgen) ERROR!  FAILED TO RECOGNIZE RUB.  Line 245: RUB      0.0000    -0.15      1.90      ! Rubidium
+
+psfgen) ERROR!  FAILED TO RECOGNIZE CES.  Line 247: CES      0.0       -0.1900    2.100     ! Cesium
+
+psfgen) ERROR!  FAILED TO RECOGNIZE BAR.  Line 249: BAR      0.0       -0.150     1.890     ! Barium
+
+psfgen) ERROR!  FAILED TO RECOGNIZE ZN.  Line 251: ZN     0.000000  -0.250000     1.090000 ! Zinc
+
+psfgen) ERROR!  FAILED TO RECOGNIZE CAD.  Line 253: CAD    0.000000  -0.120000     1.357000 ! Cadmium
+
+psfgen) ERROR!  FAILED TO RECOGNIZE CLA.  Line 255: CLA      0.0       -0.150      2.27     ! Chloride
+
+psfgen) ERROR!  FAILED TO RECOGNIZE NBFIX.  Line 258: NBFIX
+
+psfgen) ERROR!  FAILED TO RECOGNIZE SOD.  Line 261: SOD    CLA      -0.083875   3.731 !  From osmotic pressure calibration, J. Phys.Chem.Lett. 1:183-189
+
+psfgen) ERROR!  FAILED TO RECOGNIZE POT.  Line 262: POT    CLA      -0.114236   4.081 !  From osmotic pressure calibration, J. Phys.Chem.Lett. 1:183-189
+
+psfgen)  NBFix between carboxylate and sodium
+psfgen) 
+psfgen) skipping statements at end of file due to end or return statement
+psfgen) building segment ION
+psfgen) setting patch for first residue to NONE
+psfgen) setting patch for last residue to NONE
+psfgen) Info: generating structure...segment complete.
+Autoionize) Randomizing ion positions...
+Autoionize) Assigning ion coordinates...
+psfgen) Info: writing psf file KE_0_KEMA_0_GC_5_GCMA_0/KE_0_KEMA_0_GC_5_GCMA_0_autopsf_solvate_ionzied.psf
+psfgen) total of 113889 atoms
+psfgen) total of 76854 bonds
+psfgen) total of 42527 angles
+psfgen) total of 8400 dihedrals
+psfgen) total of 0 impropers
+psfgen) total of 0 explicit exclusions
+psfgen) Structure requires EXTended PSF format
+psfgen) total of 0 cross-terms
+psfgen) Info: psf file complete.
+psfgen) Info: writing pdb file KE_0_KEMA_0_GC_5_GCMA_0/KE_0_KEMA_0_GC_5_GCMA_0_autopsf_solvate_ionzied.pdb
+psfgen) Info: pdb file complete.
+Autoionize) Loading new system with added ions...
+Info) Using plugin psf for structure file KE_0_KEMA_0_GC_5_GCMA_0/KE_0_KEMA_0_GC_5_GCMA_0_autopsf_solvate_ionzied.psf
+Info) Analyzing structure ...
+Info)    Atoms: 113889
+Info)    Bonds: 76854
+Info)    Angles: 42527  Dihedrals: 8400  Impropers: 0  Cross-terms: 0
+Info)    Bondtypes: 0  Angletypes: 0  Dihedraltypes: 0  Impropertypes: 0
+Info)    Residues: 37230
+Info)    Waters: 36922
+Info)    Segments: 14
+Info)    Fragments: 37135   Protein: 0   Nucleic: 0
+Info) Using plugin pdb for coordinates from file KE_0_KEMA_0_GC_5_GCMA_0/KE_0_KEMA_0_GC_5_GCMA_0_autopsf_solvate_ionzied.pdb
+Info) Finished with coordinate file KE_0_KEMA_0_GC_5_GCMA_0/KE_0_KEMA_0_GC_5_GCMA_0_autopsf_solvate_ionzied.pdb.
+Info) Opened coordinate file KE_0_KEMA_0_GC_5_GCMA_0/KE_0_KEMA_0_GC_5_GCMA_0_autopsf_solvate_ionzied.pdb for writing.
+Info) Finished with coordinate file KE_0_KEMA_0_GC_5_GCMA_0/KE_0_KEMA_0_GC_5_GCMA_0_autopsf_solvate_ionzied.pdb.
+Autoionize) System net charge after adding ions: 1.3224780559539795e-6e.
+Autoionize) All done.
+Info) VMD for WIN32, version 1.9.3 (November 30, 2016)
+Info) Exiting normally.
+vmd > psfplugin) Detected a Charmm PSF EXTEnded file
+psfplugin) WARNING: no impropers defined in PSF file.
+psfplugin) no cross-terms defined in PSF file.
+psfplugin) Detected a Charmm PSF EXTEnded file
+psfplugin) WARNING: no impropers defined in PSF file.
+psfplugin) no cross-terms defined in PSF file.
+psfplugin) Detected a Charmm PSF EXTEnded file
+psfplugin) WARNING: no impropers defined in PSF file.
+psfplugin) no cross-terms defined in PSF file.
+psfplugin) Detected a Charmm PSF EXTEnded file
+psfplugin) WARNING: no impropers defined in PSF file.
+psfplugin) no cross-terms defined in PSF file.
+0:20 
+0:1 
+1:20 
+1:1 
+2:20 
+2:1 
+3:20 
+3:1 
+4:20 
+4:1 

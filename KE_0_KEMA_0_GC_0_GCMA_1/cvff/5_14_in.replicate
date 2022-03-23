@@ -1,0 +1,20 @@
+################################################
+# Input file setup
+################################################
+units			real
+boundary		p p p
+atom_style		full
+
+################################################
+# Non bonded and bonded interactions setup
+################################################
+pair_style 		lj/cut/coul/long 10
+kspace_style 	pppm 1.0e-4
+
+bond_style 		harmonic
+angle_style 	harmonic
+dihedral_style 	harmonic
+improper_style 	cvff
+
+read_data		20merGC_out_2.data
+write_data		20merGC_out_3.data

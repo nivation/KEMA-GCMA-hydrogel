@@ -1,0 +1,38 @@
+
+charmm2lammps v1.9.2 (c)2005-2018
+
+Info: using ./KE_0_KEMA_0_GC_5_GCMA_0/KE_0_KEMA_0_GC_5_GCMA_0_autopsf_solvate_ionzied.pdb instead of ./KE_0_KEMA_0_GC_5_GCMA_0/KE_0_KEMA_0_GC_5_GCMA_0_autopsf_solvate_ionzied.crd
+Info: lx not set: will use extremes
+Info: ly not set: will use extremes
+Info: lz not set: will use extremes
+Info: creating PSF index
+Info: converting atoms
+Info: converting bonds
+Info: converting angles
+Info: converting dihedrals
+Info: converting impropers
+Info: conversion complete
+
+
+INITIATING CHARMM CMAP SUBROUTINE...
+
+Analyzing "./KE_0_KEMA_0_GC_5_GCMA_0/KE_0_KEMA_0_GC_5_GCMA_0_autopsf_solvate_ionzied.data"...
+
+Total atoms: 113889
+Total dihedrals: 12595
+Total atom types: 14
+Section "Masses" found: line 20
+Section "Atoms" found: line 54
+Section "Dihedrals" found: line 233466
+
+Generating PHI/PSI dihedral pair list...
+
+Carbon atom type/s: 2 4
+Nitrogen atom type/s: 7
+
+Cannot find the peptide backbone C atom type
+
+Cannot find the peptide backbone C-alpha atom type
+
+Cannot find the peptide backbone N atom type
+CMAP usage impossible

@@ -1,33 +1,88 @@
 使用方法：
-python model.py [KE組數] [KEMA組數] [GC條數] [GCMA條數] [盒子長度] [刪除中間檔案(1刪除0不刪除)]
+python model.py [KE組數] [KEMA組數] [GC條數] [GCMA條數] [水的數量] [離子濃度] [盒子長度] [刪除中間檔案]
 (每組KE有8條)
 
+KE組數        :no default
+KEMA組數      :no default
+GC條數        :no default
+GCMA條數      :no default
+水的數量      :negative integer for VMD auto solvate and ionized based on boxsize
+離子濃度      :注意單位，如果輸入8，代表是8mol/L的NaCl
+盒子長度      :no default
+刪除中間檔案  :1刪除0不刪除，default 0
 
-1. 建立由1組KE組成的模型，設定盒子大小為150A，並且保留中間生成的檔案：
-> python model.py 1 0 0 0 150 0
-執行後會生成資料夾：KE_1_KEMA_0_GC_0_GCMA_0
+Example：
 
+1. 建立由 1條GC 組成的模型，加入水 7500 顆，並且設定NaCl濃度為 8 mol/L，
+設定盒子大小為 100A ，並且保留中間生成的檔案：
+> python model.py 0 0 1 0 7500 8 100 0
 
-2. 建立由1組KEMA和21條GCMA組成的模型，設定盒子大小為150A，並且刪除中間生成的檔案：
-> python model.py 0 1 0 21 150 1
+執行後會顯示基本資訊：
+
+Num of KE   set : 0
+Num of KEMA set : 0
+Num of GC       : 1
+Num of GCMA     : 0
+Num of water    : 7500
+Add NaCl (g/L)  : 8.0
+Boxsize(Å)      : 100
+Delete          : Keep all file and script
+
+Polymer Weight percentage of this system (KE+KEMA+GC+GCMA/Total) is: 0.03 (g/g)
+Pairs of NaCl added to fit desire concentration (8.00 g/L): 18
+
+Press any key if the Polymer weight percentage is correct, or please interrupt...
+
+確認沒問題後，按任何鍵即可生成資料夾：KE_0_KEMA_0_GC_1_GCMA_0_water_7500_NaCl_8_boxsize_100
+並且開始建模
+
+如果發現濃度有問題，按control+C即可終止
+
+2. 建立由1組KEMA和21條GCMA組成的模型，設定盒子大小為150A，由VMD自動加水與離子，並且刪除中間生成的檔案：
+> python model.py 0 1 0 21 -1 0 150 0
 執行後會生成資料夾：KE_0_KEMA_1_GC_0_GCMA_21
 
-
-3. 建立由21條GC組成的模型，設定盒子大小為100A，並且保留中間生成的檔案：
-> python model.py 0 0 21 0 100 0
-執行後會生成資料夾：KE_0_KEMA_1_GC_0_GCMA_21
-
-
-4.目前不支援同時含有KE和KEMA的模型
-> python model.py 1 1 0 0 150 0
+3.目前不支援同時含有KE和KEMA的模型
+> python model.py 1 1 0 0 -1 0 150 0
 Error: Do not support KE and KEMA in same system
+
+4. 如果讓VMD自動加水，則離子打甚麼都沒差
+
+5. 如果water輸入0，會判斷成無水，離子打甚麼也沒差，會自動歸零
+> python model.py 0 0 1 0 0 8 150 0
+
+Num of KE   set : 0
+Num of KEMA set : 0
+Num of GC       : 1
+Num of GCMA     : 0
+Num of water    : 0
+Add NaCl (g/L)  : 0
+Boxsize(Å)      : 150
+Delete          : Keep all file and script
+
+Polymer Weight percentage of this system (KE+KEMA+GC+GCMA/Total) is: 1.00 (g/g)
+Pairs of NaCl added to fit desire concentration (0.00 g/L): 0
+
 
 3/4
 刪除不連續的input.pdb的原子
 
 3/6更新
 1. 把charmm36移入上傳TWCC的資料夾內
-2. 如果只包含一條GC或GCMA，自動將座標旋轉並對其x,y,z軸，以得到最小的water box
+2. 如果只包含一條GC或GCMA，自動將座標旋轉並對其x,y,z軸，以得到最小的water box (短邊各留20A)
 3. 增加equilibrium和production的差別，eq無pppm，pro有pppm
 4. in檔增加寫出與讀入dump的功能(必須這樣做是因為只用read restart無法把cmap的資訊讀進來，所以每次都一定要
 重讀data檔和讀入最後一刻的狀態)
+
+
+3/22更新
+1. ionized psf改正
+2. 增加設定水數量、NaCl濃度功能
+3. 自動顯示濃度，驗證數值或終止
+
+3/23更新
+1. 把平衡的兩個script從
+NPT no pppm 1ns + NPT pppm 10 ns
+改成
+NVT pppm 1ns + NPT pppm 10 ns
+

@@ -1,0 +1,17 @@
+
+tolerance 2.0
+
+filetype pdb
+
+output ./KE_0_KEMA_0_GC_1_GCMA_0_water_7500_NaCl_0.0_boxsize_200/KE_0_KEMA_0_GC_1_GCMA_0_water_7500_NaCl_0.0_boxsize_200.pdb
+
+add_box_sides 2.0
+
+structure ./input_pdb/20mer_GC.pdb 
+  number 1
+  inside box 0. 0. 0. 200. 200. 200.
+end structure                          
+structure ./input_pdb/water.pdb 
+  number 7500
+  inside box 0. 0. 0. 200. 200. 200.
+end structure                          

@@ -4,39 +4,71 @@ import os, subprocess, shutil
 import time
 
 parser = argparse.ArgumentParser()
-parser.add_argument("KE"  ,   type=int,help="KE   set number")
-parser.add_argument("KEMA",   type=int,help="KEMA set number")
-parser.add_argument("GC",     type=int,help="GC   set number")
-parser.add_argument("GCMA",   type=int,help="GCMA set number")
-parser.add_argument("Boxsize",type=int,help="initial box size")
-parser.add_argument("Delete", type=int,help="Delete working files or not (1 delete, 0 keep)", default = 0)
+parser.add_argument("KE"  ,   type=int,help="Number of KE set")
+parser.add_argument("KEMA",   type=int,help="Number of KEMA set")
+parser.add_argument("GC",     type=int,help="Number of GC   polymer")
+parser.add_argument("GCMA",   type=int,help="Number of GCMA polymer")
+parser.add_argument("Water"  ,type=int,help="Number of Water molecule (-1 for VMD auto solvate + ionization)")
+parser.add_argument("Salt"   ,type=float,help="Add aaditional concentration of NaCl (0 for not adding any salt)")
+parser.add_argument("Boxsize",type=int,help="Initial box size")
+parser.add_argument("Delete" ,type=int,help="Delete working files or not (1 delete, 0 keep)", default = 0)
 args = parser.parse_args()
 
 
-def main(KE,KEMA,GC,GCMA,boxsize,delete):
-    name = 'KE_'+str(KE)+'_KEMA_'+str(KEMA)+'_GC_'+str(GC)+'_GCMA_'+str(GCMA)
-    print('Num of KE   set:',KE)
-    print('Num of KEMA set:',KEMA)
-    print('Num of GC      :',GC)
-    print('Num of GCMA    :',GCMA)
-    print('Boxsize(Å)     :',boxsize)
+def main(KE,KEMA,GC,GCMA,water,salt,boxsize,delete):
+    print('Num of KE   set :',KE)
+    print('Num of KEMA set :',KEMA)
+    print('Num of GC       :',GC)
+    print('Num of GCMA     :',GCMA)
+    if water < 0 :
+        water = -1
+        print("Num of water    : VMD auto solvate")
+        print("Num of NaCl     : VMD auto ionize")
+    elif water == 0:
+        salt = 0
+        print("Num of water    :",water)
+        print("Add NaCl (g/L)  :",salt)
+    else:
+        print("Num of water    :",water)
+        if salt >= 0:
+            print("Add NaCl (g/L)  :",salt)
+        else:
+            print('Error: Can not add negative NaCl')
+            exit()
+    print('Boxsize(Å)      :',boxsize)
     if delete == 1:
-        print("Delete         : Delete working file and script")
+        print("Delete          : Delete working file and script")
     elif delete == 0:
-        print("Delete         : Keep all file and script")
+        print("Delete          : Keep all file and script")
     else:
         delete = 0
-        print("Delete         : Keep all file and script")
-        
+        print("Delete          : Keep all file and script")
+
+
     if KE!=0 and KEMA!=0:
         print('Error: Do not support KE and KEMA in same system')
         exit()
+
+    polymer_mass = KE * 32252.045 + KEMA * 36732.978 + GC * 4122.2554 + GCMA * 5143.3864
+    water_mass   = 18.01 * water
+    total_mass   = polymer_mass + water_mass
+    salt_num   = round(water_mass/1000*salt/58.43977) # PBS solution with NaCl(58.43977g/mol) concentration of 8g/L
+    weigth_percentage = polymer_mass / total_mass
+    print("\nPolymer Weight percentage of this system (KE+KEMA+GC+GCMA/Total) is: %.2f (g/g)"%weigth_percentage)
+    print("Pairs of NaCl added to fit desire concentration (%.2f g/L): %.0f "%(salt,salt_num))
+    input("\nPress any key if the Polymer weight percentage is correct, or please interrupt...")
+    print("\nContinue")
+    name = 'KE_'+str(KE)+'_KEMA_'+str(KEMA)+'_GC_'+str(GC)+'_GCMA_'+str(GCMA)+'_water_'+str(water)+'_NaCl_'+str(salt)+'_boxsize_'+str(boxsize)
     if not os.path.exists(name):
         os.mkdir(name)
-    packmol(KE,KEMA,GC,GCMA,boxsize,name,delete)
-    autopsf(KE,KEMA,GC,GCMA,boxsize,name,delete)
+    packmol(KE,KEMA,GC,GCMA,water,salt_num,boxsize,name,delete)
+    print("\nPackmol finished")
+    autopsf(KE,KEMA,GC,GCMA,water,salt,boxsize,name,delete)
+    print("\autopsf finished")
     charmm2lmp(KE,KEMA,GC,GCMA,boxsize,name,delete)
+    print("\charmm2lmp finished")
     createTWCC(KE,KEMA,GC,GCMA,name)
+    print("\createTWCC finished")
 
 def createTWCC(KE,KEMA,GC,GCMA,name):
     twcc_dir = name + '/' +name
@@ -58,7 +90,7 @@ def createTWCC(KE,KEMA,GC,GCMA,name):
 
     with open(in_file,'w') as f :
         f.writelines("# Variable                                                                                                                              \n")
-        f.writelines("variable		npt_step	equal	50000000           # 50 ns                                                                            \n")
+        f.writelines("variable		npt_step	equal	1000000            # 1 ns                                                                            \n")
         f.writelines("variable		npt_thermo	equal	${npt_step}/100    # output 100 frame                                                                 \n")
         f.writelines("units           real                                                                                                                    \n")
         f.writelines("variable        filename    string  "+name+"_autopsf_solvate_ionzied.data\n")
@@ -92,7 +124,7 @@ def createTWCC(KE,KEMA,GC,GCMA,name):
         f.writelines("                                                                                                                                        \n")
         f.writelines("# Setup                                                                                                                                 \n")
         f.writelines("                                                                                                                                        \n")
-        f.writelines("neigh_modify    delay 5 every 1                                                                                                         \n")
+        f.writelines("neigh_modify    delay 1 every 1                                                                                                         \n")
         f.writelines("restart 		${npt_thermo} ./restart/300K_equilibrium.restart                                                                                       \n")
         f.writelines("dump            1 all dcd ${npt_thermo} 300K_equilibrium.dcd                                                                                         \n")
         f.writelines("dump_modify     1 unwrap yes                                                                                                            \n")
@@ -232,9 +264,10 @@ def createTWCC(KE,KEMA,GC,GCMA,name):
     
     return
 
-def packmol(KE,KEMA,GC,GCMA,boxsize,name,delete):
+def packmol(KE,KEMA,GC,GCMA,water,salt_num,boxsize,name,delete):
     packmol_inp = './'+name+'/'+name+'.inp'
     goal = name+'.pdb'
+    polymer_mass = 0
     with open(packmol_inp,'w') as f:
         f.writelines('\ntolerance 2.0\n')
         f.writelines('\nfiletype pdb\n')
@@ -332,107 +365,163 @@ def packmol(KE,KEMA,GC,GCMA,boxsize,name,delete):
             f.writelines('  number '+str(GCMA)                   +'\n')
             f.writelines('  inside box 0. 0. 0. '+str(boxsize)+'. '+str(boxsize)+'. '+str(boxsize) +'.\n')
             f.writelines('end structure                          \n')   
+        if water != 0:
+            f.writelines('structure ./input_pdb/water.pdb \n')
+            f.writelines('  number '+str(water)                   +'\n')
+            f.writelines('  inside box 0. 0. 0. '+str(boxsize)+'. '+str(boxsize)+'. '+str(boxsize) +'.\n')
+            f.writelines('end structure                          \n')   
+            if salt_num != 0:
+                f.writelines('structure ./input_pdb/SOD.pdb \n')
+                f.writelines('  number '+str(salt_num)                   +'\n')
+                f.writelines('  inside box 0. 0. 0. '+str(boxsize)+'. '+str(boxsize)+'. '+str(boxsize) +'.\n')
+                f.writelines('end structure                          \n')   
+
+                f.writelines('structure ./input_pdb/ClA.pdb \n')
+                f.writelines('  number '+str(salt_num)                   +'\n')
+                f.writelines('  inside box 0. 0. 0. '+str(boxsize)+'. '+str(boxsize)+'. '+str(boxsize) +'.\n')
+                f.writelines('end structure                          \n')   
     cmd = 'packmol < '+ packmol_inp +' > ./'+name+'/log.packmol'
     os.system(cmd)
     if delete == 1:
         os.remove(packmol_inp)
+        
     return
 
-def autopsf(KE,KEMA,GC,GCMA,boxsize,name,delete):
-    pdb             = name+'/'+name+'.pdb'
-    out_pdb         = name+'/'+name +'_autopsf.pdb'
-    out_psf         = name+'/'+name +'_autopsf.psf'
+def autopsf(KE,KEMA,GC,GCMA,water,salt,boxsize,name,delete):
+    if water == -1:    
+        pdb             = name+'/'+name+'.pdb'
+        out_pdb         = name+'/'+name +'_autopsf.pdb'
+        out_psf         = name+'/'+name +'_autopsf.psf'
 
-    out_solvate     = name+'/'+name +'_autopsf_solvate'
-    out_solvate_pdb = name+'/'+name +'_autopsf_solvate.pdb'
-    out_solvate_psf = name+'/'+name +'_autopsf_solvate.psf'
+        out_solvate     = name+'/'+name +'_autopsf_solvate'
+        out_solvate_pdb = name+'/'+name +'_autopsf_solvate.pdb'
+        out_solvate_psf = name+'/'+name +'_autopsf_solvate.psf'
 
-    out_ion         = name+'/'+name +'_autopsf_solvate_ionzied'
-    out_ion_pdb     = name+'/'+name +'_autopsf_solvate_ionzied.pdb'
-    out_ion_psf     = name+'/'+name +'_autopsf_solvate_ionzied.pdb'
+        out_ion         = name+'/'+name +'_autopsf_solvate_ionzied'
+        out_ion_pdb     = name+'/'+name +'_autopsf_solvate_ionzied.pdb'
+        out_ion_psf     = name+'/'+name +'_autopsf_solvate_ionzied.psf'
 
-    out_tcl         = name+'/'+name+'.tcl'
-    align_tcl       = name+'/'+'align.tcl'
+        out_tcl         = name+'/'+name+'.tcl'
+        align_tcl       = name+'/'+'align.tcl'
 
-    GC_total = GC+GCMA
-    set_total = KE+KEMA+GC+GCMA
+        GC_total = GC+GCMA
+        set_total = KE+KEMA+GC+GCMA
 
-    if GC_total == 1 and set_total == 1:
-        with open(align_tcl,'w') as f:
-            f.writelines("package require Orient                                         \n")
-            f.writelines("namespace import Orient::orient                                \n")
-            f.writelines('mol new '+          pdb           +'\n')  
-            f.writelines('set sel [atomselect top "all"]                                 \n')
-            f.writelines("set fragment_num [llength [lsort -unique [$sel get fragment]]] \n")
-            f.writelines("puts $fragment_num                                             \n")
-            f.writelines("if { $fragment_num == 1} {                                     \n")
-            f.writelines("	set I [draw principalaxes $sel]                              \n")
-            f.writelines("	set A [orient $sel [lindex $I 2] {0 0 1}]                    \n")
-            f.writelines("	$sel move $A                                                 \n")
-            f.writelines("	set I [draw principalaxes $sel]                              \n")
-            f.writelines("	set A [orient $sel [lindex $I 1] {0 1 0}]                    \n")
-            f.writelines("	$sel move $A                                                 \n")
-            f.writelines("	set I [draw principalaxes $sel]                              \n")
-            f.writelines("	set A [orient $sel [lindex $I 1] {1 0 0}]                    \n")
-            f.writelines("	$sel move $A                                                 \n")
-            f.writelines("	set test [measure minmax $sel]                               \n")
-            f.writelines("	$sel writepdb "+ pdb + "                   \n")
-            f.writelines("}                                                              \n")
-            f.writelines("exit                                                           \n")
-        cmd = 'vmd -dispdev text -e '+align_tcl
-        log = './'+name+'/log.align'
-        ode = subprocess.call(cmd.split(), stdout=open(log, 'w'))   
+        if GC_total == 1 and set_total == 1:
+            with open(align_tcl,'w') as f:
+                f.writelines("package require Orient                                         \n")
+                f.writelines("namespace import Orient::orient                                \n")
+                f.writelines('mol new '+          pdb           +'\n')  
+                f.writelines('set sel [atomselect top "all"]                                 \n')
+                f.writelines("set fragment_num [llength [lsort -unique [$sel get fragment]]] \n")
+                f.writelines("puts $fragment_num                                             \n")
+                f.writelines("if { $fragment_num == 1} {                                     \n")
+                f.writelines("	set I [draw principalaxes $sel]                              \n")
+                f.writelines("	set A [orient $sel [lindex $I 2] {0 0 1}]                    \n")
+                f.writelines("	$sel move $A                                                 \n")
+                f.writelines("	set I [draw principalaxes $sel]                              \n")
+                f.writelines("	set A [orient $sel [lindex $I 1] {0 1 0}]                    \n")
+                f.writelines("	$sel move $A                                                 \n")
+                f.writelines("	set I [draw principalaxes $sel]                              \n")
+                f.writelines("	set A [orient $sel [lindex $I 1] {1 0 0}]                    \n")
+                f.writelines("	$sel move $A                                                 \n")
+                f.writelines("	set test [measure minmax $sel]                               \n")
+                f.writelines("	$sel writepdb "+ pdb + "                   \n")
+                f.writelines("}                                                              \n")
+                f.writelines("exit                                                           \n")
+            cmd = 'vmd -dispdev text -e '+align_tcl
+            log = './'+name+'/log.align'
+            ode = subprocess.call(cmd.split(), stdout=open(log, 'w'))   
 
-    xmin,xmax,ymin,ymax,zmin,zmax = find_min_max(pdb,10)
+        xmin,xmax,ymin,ymax,zmin,zmax = find_min_max(pdb)
 
-    with open(out_tcl,'w') as f:
-        f.writelines('package require psfgen                                   \n')
-        f.writelines('package require solvate                                  \n')
-        f.writelines('package require autoionize                               \n')
-        f.writelines('resetpsf                                                 \n')
-        if KEMA != 0:
-            f.writelines('topology top_1_25.rtf                       \n')
-        else:
-            f.writelines('topology top_all36m_prot.rtf                \n')
-        f.writelines('mol new '+          pdb           +'\n')
-        f.writelines('set all_atom [atomselect top "all"]                      \n')
-        f.writelines('set chain_list [lsort -unique [$all_atom get fragment]]     \n')
-        f.writelines('foreach chain_id $chain_list {                           \n')
-        f.writelines('    puts $chain_id                                       \n')
-        f.writelines('    set select_atoms [atomselect top "fragment ${chain_id}"]\n')
-        f.writelines('    $select_atoms set segname $chain_id                  \n')
-        f.writelines('    $select_atoms writepdb ${chain_id}.pdb               \n')
-        f.writelines('    segment ${chain_id} {pdb ${chain_id}.pdb}            \n')
-        f.writelines('    coordpdb ${chain_id}.pdb ${chain_id}                 \n')
-        f.writelines('    guesscoord                                           \n')
-        f.writelines('    regenerate angles dihedrals                          \n')
-        f.writelines('    $select_atoms delete                                 \n')
-        f.writelines('    file delete ${chain_id}.pdb                          \n')
-        f.writelines('}                                                        \n')
-        f.writelines('writepdb '+out_pdb +   '                                 \n')
-        f.writelines('writepsf '+out_psf +   '                                 \n')
-        f.writelines('resetpsf                                                 \n')
+        with open(out_tcl,'w') as f:
+            f.writelines('package require psfgen                                   \n')
+            f.writelines('package require solvate                                  \n')
+            f.writelines('package require autoionize                               \n')
+            f.writelines('resetpsf                                                 \n')
+            if KEMA != 0:
+                f.writelines('topology top_1_25.rtf                       \n')
+            else:
+                f.writelines('topology top_all36m_prot.rtf                \n')
+            f.writelines('mol new '+          pdb           +'\n')
+            f.writelines('set all_atom [atomselect top "all"]                      \n')
+            f.writelines('set chain_list [lsort -unique [$all_atom get fragment]]     \n')
+            f.writelines('foreach chain_id $chain_list {                           \n')
+            f.writelines('    puts $chain_id                                       \n')
+            f.writelines('    set select_atoms [atomselect top "fragment ${chain_id}"]\n')
+            f.writelines('    $select_atoms set segname $chain_id                  \n')
+            f.writelines('    $select_atoms writepdb ${chain_id}.pdb               \n')
+            f.writelines('    segment ${chain_id} {pdb ${chain_id}.pdb}            \n')
+            f.writelines('    coordpdb ${chain_id}.pdb ${chain_id}                 \n')
+            f.writelines('    guesscoord                                           \n')
+            f.writelines('    regenerate angles dihedrals                          \n')
+            f.writelines('    $select_atoms delete                                 \n')
+            f.writelines('    file delete ${chain_id}.pdb                          \n')
+            f.writelines('}                                                        \n')
+            f.writelines('writepdb '+out_pdb +   '                                 \n')
+            f.writelines('writepsf '+out_psf +   '                                 \n')
+            f.writelines('resetpsf                                                 \n')
 
-        out = "solvate " + out_psf +" "+ out_pdb+" -minmax {{"+str(xmin)+' '+str(ymin)+' '+str(zmin)+"} {"+str(xmax)+' '+str(ymax)+' '+str(zmax)+' }} -o '+out_solvate+'\n'
-        f.writelines(out)
-        out = "autoionize -psf " + out_solvate_psf +" -pdb "+ out_solvate_pdb+' -o '+out_ion+' -sc 0.15\n'
-        f.writelines(out)
-        f.writelines('exit                                                     \n')
-    cmd = 'vmd -dispdev text -e '+out_tcl
-    log = './'+name+'/log.vmd'
-    ode = subprocess.call(cmd.split(), stdout=open(log, 'w'))
-    if delete == 1:
-        os.remove(pdb)
-        os.remove(out_psf)
-        os.remove(out_pdb)
-        os.remove(out_solvate_pdb)
-        os.remove(out_solvate_psf)
-        os.remove(out_tcl)
-        if os.path.exists(align_tcl):
-            os.remove(align_tcl)
-        solvate_log = './'+name+'/'+name+'_autopsf_solvate.log'
-        dst = './'+name+'/log.solvate'
-        shutil.move(solvate_log,dst)
+            out = "solvate " + out_psf +" "+ out_pdb+" -minmax {{"+str(xmin)+' '+str(ymin)+' '+str(zmin)+"} {"+str(xmax)+' '+str(ymax)+' '+str(zmax)+' }} -o '+out_solvate+'\n'
+            f.writelines(out)
+            out = "autoionize -psf " + out_solvate_psf +" -pdb "+ out_solvate_pdb+' -o '+out_ion+' -sc 0.15\n'
+            f.writelines(out)
+            f.writelines('exit                                                     \n')
+        cmd = 'vmd -dispdev text -e '+out_tcl
+        log = './'+name+'/log.vmd'
+        ode = subprocess.call(cmd.split(), stdout=open(log, 'w'))
+        if delete == 1:
+            os.remove(pdb)
+            os.remove(out_psf)
+            os.remove(out_pdb)
+            os.remove(out_solvate_pdb)
+            os.remove(out_solvate_psf)
+            os.remove(out_tcl)
+            if os.path.exists(align_tcl):
+                os.remove(align_tcl)
+            solvate_log = './'+name+'/'+name+'_autopsf_solvate.log'
+            dst = './'+name+'/log.solvate'
+            shutil.move(solvate_log,dst)
+    else:
+        pdb             = name+'/'+name+'.pdb'
+        out_pdb         = name+'/'+name +'_autopsf_solvate_ionzied.pdb'
+        out_psf         = name+'/'+name +'_autopsf_solvate_ionzied.psf'
+        out_tcl         = name+'/'+name+'.tcl'
+        
+        with open(out_tcl,'w') as f:
+            f.writelines('package require psfgen                                   \n')
+            f.writelines('resetpsf                                                 \n')
+            if KEMA != 0:
+                f.writelines('topology top_1_25.rtf                       \n')
+            else:
+                f.writelines('topology top_all36m_prot.rtf                \n')
+            f.writelines('mol new '+          pdb           +'\n')
+            f.writelines('set all_atom [atomselect top "all"]                      \n')
+            f.writelines('set chain_list [lsort -unique [$all_atom get fragment]]     \n')
+            f.writelines('foreach chain_id $chain_list {                           \n')
+            f.writelines('    puts $chain_id                                       \n')
+            f.writelines('    set select_atoms [atomselect top "fragment ${chain_id}"]\n')
+            f.writelines('    $select_atoms set segname $chain_id                  \n')
+            f.writelines('    $select_atoms writepdb ${chain_id}.pdb               \n')
+            f.writelines('    segment ${chain_id} {pdb ${chain_id}.pdb}            \n')
+            f.writelines('    coordpdb ${chain_id}.pdb ${chain_id}                 \n')
+            f.writelines('    guesscoord                                           \n')
+            f.writelines('    regenerate angles dihedrals                          \n')
+            f.writelines('    $select_atoms delete                                 \n')
+            f.writelines('    file delete ${chain_id}.pdb                          \n')
+            f.writelines('}                                                        \n')
+            f.writelines('writepdb '+out_pdb +   '                                 \n')
+            f.writelines('writepsf '+out_psf +   '                                 \n')
+            f.writelines('resetpsf                                                 \n')
+            f.writelines('exit                                                     \n')
+        
+        cmd = 'vmd -dispdev text -e '+out_tcl
+        log = './'+name+'/log.vmd'
+        ode = subprocess.call(cmd.split(), stdout=open(log, 'w'))
+        if delete == 1:
+            os.remove(pdb)
+            os.remove(out_tcl)    
     return
 
 def charmm2lmp(KE,KEMA,GC,GCMA,boxsize,name,delete):
@@ -461,7 +550,7 @@ def charmm2lmp(KE,KEMA,GC,GCMA,boxsize,name,delete):
         os.remove(filename_psf)
     return
 
-def find_min_max(pdb_file,extra_range = 10):
+def find_min_max(pdb_file,extra_range = 20):
     with open(pdb_file,'r') as f:
         xmin = 1000000
         xmax = -1000000
@@ -496,4 +585,4 @@ def find_min_max(pdb_file,extra_range = 10):
     return xmin,xmax,ymin,ymax,zmin,zmax
 
 if __name__ == '__main__':
-    main(args.KE,args.KEMA,args.GC,args.GCMA,args.Boxsize,args.Delete)  
+    main(args.KE,args.KEMA,args.GC,args.GCMA,args.Water,args.Salt,args.Boxsize,args.Delete)  
