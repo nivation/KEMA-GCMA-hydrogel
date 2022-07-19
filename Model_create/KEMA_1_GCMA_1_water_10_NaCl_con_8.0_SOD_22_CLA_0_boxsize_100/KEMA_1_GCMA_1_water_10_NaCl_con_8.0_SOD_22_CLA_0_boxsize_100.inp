@@ -1,0 +1,53 @@
+
+tolerance 2.0
+
+filetype pdb
+
+output ./KEMA_1_GCMA_1_water_10_NaCl_con_8.0_SOD_22_CLA_0_boxsize_100/KEMA_1_GCMA_1_water_10_NaCl_con_8.0_SOD_22_CLA_0_boxsize_100.pdb
+
+add_box_sides 2.0
+
+structure ./input_pdb/98_132_1A.pdb    
+  number 1
+  inside box 0. 0. 0. 100. 100. 100.
+end structure                          
+									     
+structure ./input_pdb/144_177_1B_1.pdb 
+  number 1
+  inside box 0. 0. 0. 100. 100. 100.
+end structure                          
+									     
+structure ./input_pdb/178_210_1B_2.pdb 
+  number 1
+  inside box 0. 0. 0. 100. 100. 100.
+end structure                          
+									     
+structure ./input_pdb/211_244_1B_3.pdb 
+  number 1
+  inside box 0. 0. 0. 100. 100. 100.
+end structure                          
+									     
+structure ./input_pdb/261_279_2A.pdb   
+  number 1
+  inside box 0. 0. 0. 100. 100. 100.
+end structure                          
+									     
+structure ./input_pdb/288_327_2B_1.pdb 
+  number 1
+  inside box 0. 0. 0. 100. 100. 100.
+end structure                          
+									     
+structure ./input_pdb/328_369_2B_2.pdb 
+  number 1
+  inside box 0. 0. 0. 100. 100. 100.
+end structure                          
+									     
+structure ./input_pdb/370_408_2B_3.pdb 
+  number 1
+  inside box 0. 0. 0. 100. 100. 100.
+end structure                          
+
+structure ./input_pdb/20mer_7GCMA_3GC.pdb 
+  number 1
+  inside box 0. 0. 0. 100. 100. 100.
+end structure                          
