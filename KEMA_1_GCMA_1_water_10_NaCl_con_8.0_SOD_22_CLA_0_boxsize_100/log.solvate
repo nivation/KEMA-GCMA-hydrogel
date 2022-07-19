@@ -1,0 +1,134 @@
+Info) VMD for WIN32, version 1.9.3 (November 30, 2016)
+Info) http://www.ks.uiuc.edu/Research/vmd/                         
+Info) Email questions and bug reports to vmd@ks.uiuc.edu           
+Info) Please include this reference in published work using VMD:   
+Info)    Humphrey, W., Dalke, A. and Schulten, K., `VMD - Visual   
+Info)    Molecular Dynamics', J. Molec. Graphics 1996, 14.1, 33-38.
+Info) -------------------------------------------------------------
+Info) Multithreading available, 8 CPUs detected.
+Info) Free system memory: 4095MB (100%)
+Info) Creating CUDA device pool and initializing hardware...
+Info) Detected 1 available CUDA accelerator:
+Info) [0] GeForce MX350       5 SM_6.1 @ 0.94 GHz, 2.0GB RAM, KTO, AE5, ZCP
+Info) No joysticks found.  Joystick interface disabled.
+Info) Dynamically loaded 75 plugins in directory:
+Info) C:/Program Files (x86)/University of Illinois/VMD/plugins/WIN32/molfile
+1.7
+Info) generating solute plus one replica of water...
+psfgen) reading structure from psf file KEMA_1_GCMA_1_water_10_NaCl_con_8.0_SOD_22_CLA_0_boxsize_100/KEMA_1_GCMA_1_water_10_NaCl_con_8.0_SOD_22_CLA_0_boxsize_100_autopsf.psf
+psfgen) reading coordinates from pdb file KEMA_1_GCMA_1_water_10_NaCl_con_8.0_SOD_22_CLA_0_boxsize_100/KEMA_1_GCMA_1_water_10_NaCl_con_8.0_SOD_22_CLA_0_boxsize_100_autopsf.pdb
+psfgen) reading structure from psf file C:/Program Files (x86)/University of Illinois/VMD/plugins/noarch/tcl/solvate1.7/wat.psf
+psfgen) psf file does not contain cross-terms
+psfgen) reading coordinates from pdb file C:/Program Files (x86)/University of Illinois/VMD/plugins/noarch/tcl/solvate1.7/wat.pdb
+psfgen) Info: writing psf file combine.psf
+psfgen) total of 33563 atoms
+psfgen) total of 24327 bonds
+psfgen) total of 28930 angles
+psfgen) total of 14860 dihedrals
+psfgen) total of 833 impropers
+psfgen) total of 0 explicit exclusions
+psfgen) Structure requires EXTended PSF format
+psfgen) total of 260 cross-terms
+psfgen) Info: psf file complete.
+psfgen) Info: writing pdb file combine.pdb
+psfgen) Info: pdb file complete.
+Info) Using plugin psf for structure file combine.psf
+Info) Analyzing structure ...
+Info)    Atoms: 33563
+Info)    Bonds: 24327
+Info)    Angles: 28930  Dihedrals: 14860  Impropers: 833  Cross-terms: 260
+Info)    Bondtypes: 0  Angletypes: 0  Dihedraltypes: 0  Impropertypes: 0
+Info)    Residues: 9557
+Info)    Waters: 9261
+Info)    Segments: 10
+Info)    Fragments: 9270   Protein: 8   Nucleic: 0
+Info) Using plugin pdb for coordinates from file combine.pdb
+Info) Finished with coordinate file combine.pdb.
+Info) generating water residue lists...
+Info) single water residue type, creating residue list...
+Info) replicating 8 water segments, 2 by 2 by 2
+psfgen) reading topology file C:/Program Files (x86)/University of Illinois/VMD/plugins/noarch/tcl/solvate1.7/wat.top
+
+psfgen) >>>>>> Combined CHARMM All-Hydrogen Topology File for <<<<<<<<<
+psfgen) >>>>>>>>> CHARMM22 Proteins and CHARMM27 Lipids <<<<<<<<<<
+psfgen) from
+psfgen) >>>>>>>>CHARMM22 All-Hydrogen Topology File for Proteins <<<<<<
+psfgen) >>>>>>>>>>>>>>>>>>>>> August 1999 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+psfgen) >>>>>>> Direct comments to Alexander D. MacKerell Jr. <<<<<<<<<
+psfgen) >>>>>> 410-706-7442 or email: alex,mmiris.ab.umd.edu  <<<<<<<<<
+psfgen) and
+psfgen)   \\\\\\\ CHARMM27 All-Hydrogen Lipid Topology File ///////
+psfgen)   \\\\\\\\\\\\\\\\\\ Developmental /////////////////////////
+psfgen) 		Alexander D. MacKerell Jr.
+psfgen) 			August 1999
+psfgen)  All comments to ADM jr.  email: alex,mmiris.ab.umd.edu
+psfgen) 		telephone: 410-706-7442
+psfgen) 
+psfgen) Created by CHARMM version 27 1
+psfgen) building segment WT1
+psfgen) setting patch for first residue to NONE
+psfgen) setting patch for last residue to NONE
+psfgen) Info: generating structure...segment complete.
+psfgen) building segment WT2
+psfgen) setting patch for first residue to NONE
+psfgen) setting patch for last residue to NONE
+psfgen) Info: generating structure...segment complete.
+psfgen) building segment WT3
+psfgen) setting patch for first residue to NONE
+psfgen) setting patch for last residue to NONE
+psfgen) Info: generating structure...segment complete.
+psfgen) building segment WT4
+psfgen) setting patch for first residue to NONE
+psfgen) setting patch for last residue to NONE
+psfgen) Info: generating structure...segment complete.
+psfgen) building segment WT5
+psfgen) setting patch for first residue to NONE
+psfgen) setting patch for last residue to NONE
+psfgen) Info: generating structure...segment complete.
+psfgen) building segment WT6
+psfgen) setting patch for first residue to NONE
+psfgen) setting patch for last residue to NONE
+psfgen) Info: generating structure...segment complete.
+psfgen) building segment WT7
+psfgen) setting patch for first residue to NONE
+psfgen) setting patch for last residue to NONE
+psfgen) Info: generating structure...segment complete.
+psfgen) building segment WT8
+psfgen) setting patch for first residue to NONE
+psfgen) setting patch for last residue to NONE
+psfgen) Info: generating structure...segment complete.
+psfgen) Info: writing psf file KEMA_1_GCMA_1_water_10_NaCl_con_8.0_SOD_22_CLA_0_boxsize_100/KEMA_1_GCMA_1_water_10_NaCl_con_8.0_SOD_22_CLA_0_boxsize_100_autopsf_solvate.psf
+psfgen) total of 165038 atoms
+psfgen) total of 111977 bonds
+psfgen) total of 63494 angles
+psfgen) total of 14860 dihedrals
+psfgen) total of 833 impropers
+psfgen) total of 0 explicit exclusions
+psfgen) Structure requires EXTended PSF format
+psfgen) total of 260 cross-terms
+psfgen) Info: psf file complete.
+psfgen) Info: writing pdb file KEMA_1_GCMA_1_water_10_NaCl_con_8.0_SOD_22_CLA_0_boxsize_100/KEMA_1_GCMA_1_water_10_NaCl_con_8.0_SOD_22_CLA_0_boxsize_100_autopsf_solvate.pdb
+psfgen) Info: pdb file complete.
+psfgen) clearing structure, preserving topology and aliases
+Info) Using plugin psf for structure file KEMA_1_GCMA_1_water_10_NaCl_con_8.0_SOD_22_CLA_0_boxsize_100/KEMA_1_GCMA_1_water_10_NaCl_con_8.0_SOD_22_CLA_0_boxsize_100_autopsf_solvate.psf
+Info) Analyzing structure ...
+Info)    Atoms: 165038
+Info)    Bonds: 111977
+Info)    Angles: 63494  Dihedrals: 14860  Impropers: 833  Cross-terms: 260
+Info)    Bondtypes: 0  Angletypes: 0  Dihedraltypes: 0  Impropertypes: 0
+Info)    Residues: 53382
+Info)    Waters: 53086
+Info)    Segments: 17
+Info)    Fragments: 53095   Protein: 8   Nucleic: 0
+Info) Using plugin pdb for coordinates from file KEMA_1_GCMA_1_water_10_NaCl_con_8.0_SOD_22_CLA_0_boxsize_100/KEMA_1_GCMA_1_water_10_NaCl_con_8.0_SOD_22_CLA_0_boxsize_100_autopsf_solvate.pdb
+Info) Finished with coordinate file KEMA_1_GCMA_1_water_10_NaCl_con_8.0_SOD_22_CLA_0_boxsize_100/KEMA_1_GCMA_1_water_10_NaCl_con_8.0_SOD_22_CLA_0_boxsize_100_autopsf_solvate.pdb.
+Info) Opened coordinate file KEMA_1_GCMA_1_water_10_NaCl_con_8.0_SOD_22_CLA_0_boxsize_100/KEMA_1_GCMA_1_water_10_NaCl_con_8.0_SOD_22_CLA_0_boxsize_100_autopsf_solvate.pdb for writing.
+Info) Finished with coordinate file KEMA_1_GCMA_1_water_10_NaCl_con_8.0_SOD_22_CLA_0_boxsize_100/KEMA_1_GCMA_1_water_10_NaCl_con_8.0_SOD_22_CLA_0_boxsize_100_autopsf_solvate.pdb.
+Info) Extra structure overlap safety check...
+Info) Solvate completed successfully.
+Info) VMD for WIN32, version 1.9.3 (November 30, 2016)
+Info) Exiting normally.
+vmd > psfplugin) Detected a Charmm PSF file
+psfplugin) Detected a Charmm PSF EXTEnded file
+psfplugin) Detected a Charmm PSF file
+psfplugin) Detected a Charmm PSF EXTEnded file

@@ -1,0 +1,41 @@
+
+charmm2lammps v1.9.2 (c)2005-2018
+
+Info: using KEMA_1_GCMA_1_water_10_NaCl_con_8.0_SOD_22_CLA_0_boxsize_100/KEMA_1_GCMA_1_water_10_NaCl_con_8.0_SOD_22_CLA_0_boxsize_100_autopsf_solvate_ionzied.pdb instead of KEMA_1_GCMA_1_water_10_NaCl_con_8.0_SOD_22_CLA_0_boxsize_100/KEMA_1_GCMA_1_water_10_NaCl_con_8.0_SOD_22_CLA_0_boxsize_100_autopsf_solvate_ionzied.crd
+Info: lx not set: will use extremes
+Info: ly not set: will use extremes
+Info: lz not set: will use extremes
+Info: creating PSF index
+Info: converting atoms
+Info: converting bonds
+Info: converting angles
+Info: converting dihedrals
+Info: converting impropers
+Info: conversion complete
+
+
+INITIATING CHARMM CMAP SUBROUTINE...
+
+Analyzing "KEMA_1_GCMA_1_water_10_NaCl_con_8.0_SOD_22_CLA_0_boxsize_100/KEMA_1_GCMA_1_water_10_NaCl_con_8.0_SOD_22_CLA_0_boxsize_100_autopsf_solvate_ionzied.data"...
+
+Total atoms: 5832
+Total dihedrals: 18398
+Total atom types: 55
+Section "Masses" found: line 20
+Section "Atoms" found: line 136
+Section "Dihedrals" found: line 23017
+
+Generating PHI/PSI dihedral pair list...
+
+Carbon atom type/s: 2 5 6 7 10 13 32 33 34 35 36 37 38 39 40 41 42 43 54
+Nitrogen atom type/s: 4 15 44 45 46 47 48 49 55
+Peptide backbone carbon type: 32
+Alpha-carbon type: 34
+Alpha-carbon type (GLY): 35
+Peptide backbone nitrogen type: 46
+Terminal amino acid type is: 
+
+Writing "KEMA_1_GCMA_1_water_10_NaCl_con_8.0_SOD_22_CLA_0_boxsize_100/KEMA_1_GCMA_1_water_10_NaCl_con_8.0_SOD_22_CLA_0_boxsize_100_autopsf_solvate_ionzied.data" with section "CMAP crossterms" added at the end.
+
+Done!
+

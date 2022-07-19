@@ -3769,6 +3769,13 @@ NBFIX
 !              Emin         Rmin
 !            (kcal/mol)     (A)
 NC2    OC       -0.154919   3.637 !  From osmotic pressure calibration
+! Chloride 
+CLA    SOD      -0.0839     3.7310 ! Savelyev and MacKerell, JPCB 2015
+! SOD and CGenFF: no need to add
+! SOD and prot: add two exist atom
+SOD    OC       -0.07502    3.23  ! osmotic P; carboxylate =O
+SOD    OS       -0.07502    3.13  ! POPC optim.; ester =O
+! Cgenff: no need to add
 
 HBOND CUTHB 0.5  ! If you want to do hbond analysis (only), then use
                  ! READ PARAM APPEND CARD

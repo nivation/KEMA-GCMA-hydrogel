@@ -1,67 +1,93 @@
 使用方法：
-python model.py [KE組數] [KEMA組數] [GC條數] [GCMA條數] [水的數量] [離子濃度] [盒子長度] [刪除中間檔案]
-(每組KE有8條)
+python model.py [KEMA組數] [GCMA條數] [水的數量] [離子濃度] [盒子長度] [共軛模型] [刪除中間檔案] > out.log
+(每組KEMA有8條)
 
-KE組數        :no default
 KEMA組數      :no default
-GC條數        :no default
 GCMA條數      :no default
 水的數量      :negative integer for VMD auto solvate and ionized based on boxsize
-離子濃度      :注意單位，如果輸入8，代表是8 g/L的NaCl
-盒子長度      :no default
+離子濃度      :單位是g/L
+盒子長度      :no default(A)
+共軛模型      :no default，1 for conjugate, 0 for not
 刪除中間檔案  :1刪除0不刪除，default 0
 
 Example：
 
-1. 建立由 1條GC 組成的模型，加入水 7500 顆，並且設定NaCl濃度為 8 g/L，
-設定盒子大小為 100A ，並且保留中間生成的檔案：
-> python model.py 0 0 1 0 7500 8 100 0
+1. 1組KEMA+1條GCMA+10顆水+8g/L的NaCl在100A的箱子裡，不建立共軛模型，保留中間檔案
+> python model.py 1 1 10 8 100 0 0
 
 執行後會顯示基本資訊：
 
-Num of KE   set : 0
-Num of KEMA set : 0
-Num of GC       : 1
-Num of GCMA     : 0
-Num of water    : 7500
-Add NaCl (g/L)  : 8.0
-Boxsize(Å)      : 100
-Delete          : Keep all file and script
+(base) D:\Keratin\0_simulation\0_model_create_sort>python model.py 1 1 10 8 100 0 0
+------------Skip Conjugate------------
 
-Polymer Weight percentage of this system (KE+KEMA+GC+GCMA/Total) is: 0.03 (g/g)
-Pairs of NaCl added to fit desire concentration (8.00 g/L): 18
+-------------- Original --------------
+Num of KEMA/KE set   : 1
+Num of Neutrlize SOD : 22
+Num of GCMA/GC       : 1
+Num of water         : 10
+Add NaCl (g/L)       : 8.0
+Pair of NaCl         : 0
+Total SOD            : 22
+Total CLA            : 0
 
-Press any key if the Polymer weight percentage is correct, or please interrupt...
+KE/KEMA Weight percentage of this system ((KEMA)/(KEMA+GCMA+water+salt)))      (g/g) is: 0.8630414792456265
+GC/GCMA Weight percentage of this system ((GCMA)/(KEMA+GCMA+water+salt)))      (g/g) is: 0.12084388603036317
+Polymer Weight percentage of this system ((KEMA+GCMA)/(KEMA+GCMA+water+salt))) (g/g) is: 0.9838853652759897
 
-確認沒問題後，按任何鍵即可生成資料夾：KE_0_KEMA_0_GC_1_GCMA_0_water_7500_NaCl_8_boxsize_100
+Total atoms          : 5832
+
+PackMol Boxsize(Å)   : 100
+Delete               : Keep all file and script
+
+Press Enter key if the Polymer weight percentage is correct, or please interrupt...
+
+確認沒問題後，按任何鍵即可生成資料夾：KEMA_1_GCMA_1_water_10_NaCl_con_8.0_SOD_22_CLA_0_boxsize_100
 並且開始建模
 
 如果發現濃度有問題，按control+C即可終止
 
-2. 建立由1組KEMA和21條GCMA組成的模型，設定盒子大小為150A，由VMD自動加水與離子，並且刪除中間生成的檔案：
-> python model.py 0 1 0 21 -1 0 150 0
+2. 建立由1組KEMA和21條GCMA組成的模型，設定盒子大小為150A，由VMD自動加水與離子(設定8g/L)，並且刪除中間生成的檔案：
+> python model.py 1 1 -1 8 100 1 1
 執行後會生成資料夾：KE_0_KEMA_1_GC_0_GCMA_21
 
-3.目前不支援同時含有KE和KEMA的模型
-> python model.py 1 1 0 0 -1 0 150 0
-Error: Do not support KE and KEMA in same system
+(base) D:\Keratin\0_simulation\0_model_create_sort>python model.py 1 1 -1 8 100 1 1
 
-4. 如果讓VMD自動加水，則離子打甚麼都沒差
+-------------- Original --------------
+Num of KEMA/KE set   : 1
+Num of Neutrlize SOD : 22
+Num of GCMA/GC       : 1
+Num of water         : VMD_auto_solvate
+Add NaCl (g/L)       : 8.0
+Pair of NaCl         : VMD_auto_ionize
+Total SOD            : Unknown
+Total CLA            : Unknown
 
-5. 如果water輸入0，會判斷成無水，離子打甚麼也沒差，會自動歸零
-> python model.py 0 0 1 0 0 8 150 0
+KE/KEMA Weight percentage of this system ((KEMA)/(KEMA+GCMA+water+salt)))      (g/g) is: Unknown
+GC/GCMA Weight percentage of this system ((GCMA)/(KEMA+GCMA+water+salt)))      (g/g) is: Unknown
+Polymer Weight percentage of this system ((KEMA+GCMA)/(KEMA+GCMA+water+salt))) (g/g) is: Unknown
 
-Num of KE   set : 0
-Num of KEMA set : 0
-Num of GC       : 1
-Num of GCMA     : 0
-Num of water    : 0
-Add NaCl (g/L)  : 0
-Boxsize(Å)      : 150
-Delete          : Keep all file and script
+Total atoms          : Unknown
 
-Polymer Weight percentage of this system (KE+KEMA+GC+GCMA/Total) is: 1.00 (g/g)
-Pairs of NaCl added to fit desire concentration (0.00 g/L): 0
+-------------- Conjugate --------------
+Num of KEMA/KE set   : 1
+Num of Neutrlize SOD : 22
+Num of GCMA/GC       : 1
+Num of water         : VMD_auto_solvate
+Add NaCl (g/L)       : 8.0
+Pair of NaCl         : VMD_auto_ionize
+Total SOD            : Unknown
+Total CLA            : Unknown
+
+KE/KEMA Weight percentage of this system ((KEMA)/(KEMA+GCMA+water+salt)))      (g/g) is: Unknown
+GC/GCMA Weight percentage of this system ((GCMA)/(KEMA+GCMA+water+salt)))      (g/g) is: Unknown
+Polymer Weight percentage of this system ((KEMA+GCMA)/(KEMA+GCMA+water+salt))) (g/g) is: Unknown
+
+Total atoms          : Unknown
+
+PackMol Boxsize(Å)   : 100
+Delete               : Delete working file and script
+
+Press Enter key if the Polymer weight percentage is correct, or please interrupt...
 
 
 3/4
@@ -86,3 +112,36 @@ NPT no pppm 1ns + NPT pppm 10 ns
 改成
 NVT pppm 1ns + NPT pppm 10 ns
 
+3/31
+共軛模型的創建
+例如：python model.py 1 0 5 0 7500 8 100 1 0
+會產生2個model
+一個是1 set KE   + 5 GC   + 7500 water + 8g/L NaCl in 100A box
+一個是1 set KEMA + 5 GCMA + 7500 water + 8g/L NaCl in 100A box
+
+4/1 增加新方法：一旦水太多可以用
+先用packmol把很多水包進去
+再用Autopsf做的話 會壞掉
+所以 還是要依賴VMD的隨機加水的功能
+只是box的大小就很看緣分了
+
+0:VMD方法：水數量不確定，需要後處裡PDB和PSF，conjugate系統的水的位置不相同，比較快 (default)
+1:PACKMOL法：水數量確定，conjugate系統確定水的位置相同，autopsf極慢
+
+目前卡在加完水的pdb psf要把水移調 並且加鹽
+
+4/2
+完成pdb psf檔的修正
+修正加離子的時候會把水拿掉的問題
+目前把水的pdb改成單顆的，可以解決水太多的問題
+可以用method 0: VMD autosolvate + delete water + ionized來建模了 很快
+力場修NB reaction between ions and oxygen(主要是補上ions和prot用原子間的NBFIX)
+
+4/5
+已經更新到最後的TWCC檔案
+似乎NB在in檔中的還是怪怪的
+還沒修好
+
+5/20
+NB已修正
+run small step + minimize + write data + dump 解決PPPM問題
