@@ -12,7 +12,7 @@ Several softwares are available and should be installed and set as enviormental 
 * [Polymatic](https://nanohub.org/resources/17278)
 
 ## Testing enviornment
-### [Model Create](#ModelCreate)  
+### [Model_Create](#Model_Create)  
 * Python 3.9.12  
 * Numpy 1.21.5  
 
@@ -24,6 +24,6 @@ Several softwares are available and should be installed and set as enviormental 
 ## Introduction
 
 ## Usage
-### Model Create 
+### Model_Create 
 
 ### Polymerization  
