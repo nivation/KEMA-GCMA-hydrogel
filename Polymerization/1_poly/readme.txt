@@ -1,1 +1,0 @@
-Example input data file can be downloaded from:
