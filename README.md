@@ -22,8 +22,10 @@ Several softwares are available and should be installed and set as enviormental 
 * Numpy 1.20.2  
 
 ## Introduction
-[Demo video](https://www.youtube.com/watch?v=srP5eyy9h00&feature=youtu.be)
-
+[Demo video](https://www.youtube.com/watch?v=srP5eyy9h00&feature=youtu.be)  
+  
+__Procedue of this code__:  
+![Alt text](https://github.com/nivation/KEMA-GCMA-hydrogel/blob/main/Procedue.PNG)
 
 
 
