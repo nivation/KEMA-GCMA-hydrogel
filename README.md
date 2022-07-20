@@ -22,6 +22,10 @@ Several softwares are available and should be installed and set as enviormental 
 * Numpy 1.20.2  
 
 ## Introduction
+[Demo video](https://www.youtube.com/watch?v=srP5eyy9h00&feature=youtu.be)
+
+
+
 
 ## Usage
 ### Model_Create 
@@ -102,6 +106,8 @@ start polymatic
 start md
 ```
  __Note:__  
+ Example input data file can be downloaded from [here](https://drive.google.com/file/d/1yrjvKAFK79rm1dO4Moucz77TnQBrwsEV/view?usp=sharing) and put into ./Polymerization/1_poly
+ 
  This code is used for lab research. The input script for running LAMMPS may be differ.  
  Users should check the input script in control.py such as:  
  ```
