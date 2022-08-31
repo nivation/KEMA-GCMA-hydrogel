@@ -11,7 +11,7 @@ Several softwares are available and should be installed and set as enviormental 
 * [LAMMPS](https://www.lammps.org/download.html)
 * [Polymatic](https://nanohub.org/resources/17278)
 
-## Enviornment
+## Environment
 ### [Model_Create](#Model_Create)  
 * Python 3.9.12  
 * Numpy 1.21.5  
